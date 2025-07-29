@@ -1,3 +1,4 @@
+from time import sleep
 import google.genai as genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -7,39 +8,43 @@ import json
 def call_gemini_llm(article, prompt):
 
     event_extraction_schema = {
-        "title": "Event Extraction Schema",
-        "type": "array",
-        "items": {
-            "type": "object",
-            "properties": {
-                "event": {"type": "string", "description": "Short title or label for the event"},
-                "actors": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                    "description": "List of people, organizations, or groups involved"
-                },
-                "time_expression": {
-                    "type": "string",
-                    "description": "Time or date phrase as it appears in the article"
-                },
-                "resolved_time": {
-                    "type": "string",
-                    "format": "date",
-                    "description": "Normalized date in YYYY-MM-DD format"
-                },
-                "location": {
-                    "type": ["string", "null"],
-                    "description": "Place associated with the event"
-                },
-                "details": {
-                    "type": "string",
-                    "description": "Full sentence or two describing the event"
-                }
+    "title": "Event Extraction Schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "event": {"type": "string", "description": "Short title or label for the event"},
+            "actors": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "List of people, organizations, or groups involved"
             },
-            "required": ["event", "actors", "time_expression", "resolved_time", "details"]
+            "time_expression": {
+                "type": "string",
+                "description": "Time or date phrase as it appears in the article"
+            },
+            "event_date": {
+                "type": "string",
+                "format": "date",
+                "description": "date in YYYY-MM-DD format"
+            },
+            "event_time": {
+                "type": ["string", "null"],
+                "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)$",
+                "description": "time in 24-hour format, or null if unknown"
+            },
+            "location": {
+                "type": ["string", "null"],
+                "description": "Place associated with the event"
+            },
+            "details": {
+                "type": "string",
+                "description": "Full sentence or two describing the event"
             }
-        }
-
+        },
+        "required": ["event", "actors", "time_expression", "event_date", "details"]
+    }
+}
 
     client = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
     try:
@@ -76,19 +81,20 @@ def main():
 
     prompt = """You are an expert in event extraction from Nepali news articles.
 
-    Given the article title, published date, and content below, extract all distinct events or stages.
-
-    For each event, provide these fields:
-    - event: a short title or label
-    - actors: list of people, organizations, or groups involved
-    - time_expression: the original time/date phrase from the article
-    - resolved_time: the normalized date (YYYY-MM-DD)
-    - location: place associated with the event (if any)
-    - details: a full sentence or two describing the event
-
-    Only include events relevant to the article’s main story
+    Given the article title, published date, and content below, extract all distinct events.
+    २०८२ साउन १२ गतेको सोमबार थियो. Using this fact, construct the dates mentioned in the article. Use the nepali calendar date format (YYYY-MM-DD). Please pay extra attention to the dates mentioned in the article, and construct them based on the published date and reference fact date.
+    
     Here is the article metadata and content:
     """
+    
+    # For each event, provide these fields:
+    # - event: a short title or label
+    # - actors: list of people, organizations, or groups involved
+    # - time_expression: the original date/time phrase from the article
+    # - event_date: the date (YYYY-MM-DD), using the published_date, identify the date the event occurred in if it's not explicitly mentioned, like day before is one day before the published date.
+    # - event_time: the time (24-hour format), use cues like morning, afternoon, evening, to create sample times as well.
+    # - location: place associated with the event (if any)
+    # - details: a full sentence or two describing the event
 
     results = []
     for article in articles:
@@ -101,6 +107,7 @@ def main():
             "published_date": article.get('published_date'),
             "entities": response.get('entities', [])
         })
+        sleep(2)
 
     # Save extracted entities to a new JSON file
     with open('src/data/article_entities.json', 'w', encoding='utf-8') as f:
