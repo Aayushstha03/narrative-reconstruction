@@ -1,0 +1,826 @@
+[
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731911/hayu-family-found-in-pokhara-says-lets-not-return-to-sindhuli-we-are-very-sick",
+    "title": "पोखरामा भेटिएका हायू परिवार भन्छन्- सिन्धुली फर्कन्नौं, धेरै बिरामी पर्‍यौं",
+    "published_date": "२०८२ साउन  १२ गते २२:३६",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायूको परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पा नजिक भण्डास बिप्पर कटेरी भन्ने ठाउँमा बसोबास गर्ने उर्मिला हायूको परिवारका १६ जना पोखरामा भेटिएका छन् ।",
+        "event": "परिवार पोखरामा भेटियो",
+        "resolved_time": "2023-07-24",
+        "time_expression": "आज (सोमबार)",
+        "location": "पोखरा महानगरपालिका–३०, कास्की"
+      },
+      {
+        "actors": [
+          "उर्मिला हायूको परिवार"
+        ],
+        "details": "उनीहरू गत शनिबार नै पोखरा पुगेका थिए र लेकसाइडस्थित होटल जननीमा तीन वटा कोठा लिएर बसेका थिए ।",
+        "event": "होटलमा बसे",
+        "resolved_time": "2023-07-22",
+        "time_expression": "गत शनिबार",
+        "location": "लेकसाइड, पोखरा"
+      },
+      {
+        "actors": [
+          "प्रहरी",
+          "प्रशासन",
+          "स्थानीय जनप्रतिनिधि"
+        ],
+        "details": "एकै परिवारका १६ जना बेपत्ता भएको खबर प्रकाशित भएपछि प्रहरी, प्रशासन, स्थानीय जनप्रतिनिधिसहितको टोली खोजी कार्यका लागि सक्रिय भएको थियो ।",
+        "event": "खोजी कार्य",
+        "resolved_time": "2023-07-24",
+        "time_expression": "आज (सोमबार)",
+        "location": null
+      },
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "उनीहरूले सिन्धुलीको उक्त घरमा आफूहरू बिरामी पर्न थालेपछि नयाँ ठाउँको खोजीका लागि पोखरा पुगेको बताएका छन् ।",
+        "event": "पोखरा जानुको कारण",
+        "resolved_time": "2023-07-24",
+        "time_expression": "अहिले",
+        "location": "सिन्धुली"
+      },
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "उनीहरूले सिन्धुली फर्कन तयार नभएको बताइरहेका छन् र आफूहरूलाई सिन्धुलीको उक्त क्षेत्रभन्दा अन्यत्र नै बस्ने व्यवस्था मिलाइदिन आग्रह गरेका छन् ।",
+        "event": "सिन्धुली नफर्कने",
+        "resolved_time": "2023-07-24",
+        "time_expression": "अहिले",
+        "location": "सिन्धुली"
+      },
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "सिन्धुलीका उक्त परिवारका सदस्यहरू पोखरा महानगरपालिका–३० स्थित गगनगौंडामा सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा ज्यामी काम गर्नका लागि आएको भन्दै बसेका थिए ।",
+        "event": "गगनगौंडामा",
+        "resolved_time": "2023-07-24",
+        "time_expression": "अहिले",
+        "location": "गगनगौंडा, पोखरा"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731988/police-put-hayu-family-in-the-care-of-relatives",
+    "title": "हायु परिवारलाई प्रहरीले लगायो आफन्तको जिम्मा",
+    "published_date": "२०८२ साउन  १३ गते ८:०७",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "प्रहरी"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पाबाट बेपत्ता भएर पोखरामा भेटिएका उर्मिला हायूका परिवारलाई प्रहरीले आफन्तको जिम्मा लगाएको छ ।",
+        "event": "परिवार आफन्तको जिम्मा",
+        "resolved_time": "2023-07-29",
+        "time_expression": "१३ साउन",
+        "location": "पोखरा"
+      },
+      {
+        "actors": [
+          "धनबहादुर",
+          "अमिस तामाङ",
+          "प्रहरी"
+        ],
+        "details": "सोमबार राति पोखरा महानगरपालिका–३० स्थित गगनगौंडामा भेटिएका उनीहरुलाई प्रहरीले धनबहादुर र अमिस तामाङको जिम्मा लगाएको हो ।",
+        "event": "परिवार धनबहादुर र अमिस तामाङको जिम्मा",
+        "resolved_time": "2023-07-24",
+        "time_expression": "सोमबार राति",
+        "location": "गगनगौंडा"
+      },
+      {
+        "actors": [
+          "हायु परिवार"
+        ],
+        "details": "हायु परिवारले यही साउन १० गते मध्यराति थातथलो छोडेर बेपत्ता भएका थिए ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2023-07-26",
+        "time_expression": "यही साउन १० गते मध्यराति",
+        "location": "छेत्पा"
+      },
+      {
+        "actors": [
+          "सिन्धुली",
+          "रामेछाप",
+          "कास्की प्रशासन"
+        ],
+        "details": "एकै परिवारका १६ जना परिवारका सदस्य बेपत्ता भएको खबर पाएपछि सिन्धुली, रामेछाप र कास्की प्रशासनले खोजी गरेको थियो ।",
+        "event": "प्रशासनद्वारा खोजी",
+        "resolved_time": "2023-07-29",
+        "time_expression": "खबर पाएपछि",
+        "location": null
+      },
+      {
+        "actors": [
+          "सोमनाथ पौडेल",
+          "चन्द्र भण्डारी",
+          "परिवार"
+        ],
+        "details": "स्थानीय सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा पुगेर उनीहरूले आफूहरू ज्यामी काम गर्न आएको भन्दै शरण लिएका थिए ।",
+        "event": "शरण",
+        "resolved_time": "2023-07-29",
+        "time_expression": "पुगेर",
+        "location": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731892/12-of-16-members-of-the-same-family-missing-from-sindhuli-found-in-pokhara",
+    "title": "सिन्धुलीबाट बेपत्ता एकै परिवारका १६ जनामध्ये १२ जना पोखरामा भेटिए",
+    "published_date": "२०८२ साउन  १२ गते २१:२६",
+    "entities": [
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पाबाट एकै परिवारका १६ जना बेपत्ता भएकामा १२ जना पोखरामा सम्पर्कमा आएका हुन् ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2024-07-27",
+        "time_expression": "४ दिनदेखि",
+        "location": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पा"
+      },
+      {
+        "actors": [
+          "प्रहरी"
+        ],
+        "details": "गोलन्जोर गाउँपालिका-६ स्थित छेत्पा नजिक भण्डास बिप्पर कटेरी भन्ने ठाउँमा बसोबास गर्दै आएकी उर्मिला हायुको १६ जनाको परिवार ४ दिनदेखि सम्पर्कविहीन भएपछि प्रहरीले खोजी अभियान थालेको थियो ।",
+        "event": "खोजी अभियान",
+        "resolved_time": "2024-07-27",
+        "time_expression": "४ दिनदेखि",
+        "location": "गोलन्जोर गाउँपालिका-६ छेत्पा"
+      },
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "उनीहरू पोखराको लेकसाइडस्थित एक होटलमा गएर बसेको सूचना प्रहरीले पायो ।",
+        "event": "होटलमा बसेको",
+        "resolved_time": "2024-07-27",
+        "time_expression": "शनिबार",
+        "location": "पोखराको लेकसाइडस्थित एक होटल"
+      },
+      {
+        "actors": [
+          "सुनिल भूर्तेल",
+          "होटल जननी"
+        ],
+        "details": "उक्त होटलका सञ्चालक सुनिल भूर्तेलका अनुसार शनिबार आएर उनीहरू आइतबार नै होटलबाट चेक आउट गरेर निस्किएका अनलाइनखबरसँग बताए ।",
+        "event": "होटलबाट चेक आउट",
+        "resolved_time": "2024-07-28",
+        "time_expression": "आइतबार",
+        "location": "होटल जननी, पोखरा"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731788/shocking-sindhuli-incident-where-did-16-members-of-the-same-family-disappear-to",
+    "title": "चकित पार्ने सिन्धुली घटना : कहाँ बेपत्ता भए हायू परिवारका १६ सदस्य ?",
+    "published_date": "२०८२ साउन  १२ गते १९:२१",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका-६ छेत्पाबाट उर्मिला हायूको १६ सदस्यीय परिवार तीन दिनदेखि सम्पर्कविहीन भएको छ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2023-07-28",
+        "time_expression": "तीन दिनदेखि",
+        "location": "सिन्धुलीको गोलन्जोर गाउँपालिका-६ छेत्पा"
+      },
+      {
+        "actors": [
+          "प्रहरी"
+        ],
+        "details": "प्रहरीले परिवारको अन्तिम लोकेसन रामेछापको सिमन्दीछापमा देखिएको र खोजी भइरहेको जनाएको छ।",
+        "event": "अन्तिम लोकेसन",
+        "resolved_time": "2023-07-29",
+        "time_expression": "अन्तिम",
+        "location": "रामेछापको सिमन्दीछाप"
+      },
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "परिवार"
+        ],
+        "details": "परिवारले केही दिनअघि सामाजिक सुरक्षा भत्ता लिएको र घरमा सुँगुर काटेर खाएको पाइएको छ, सम्पर्कविहीन हुनुको कारण अझै पत्ता लागेको छैन।",
+        "event": "सामाजिक सुरक्षा भत्ता",
+        "resolved_time": "2023-07-25",
+        "time_expression": "केही दिनअघि",
+        "location": null
+      },
+      {
+        "actors": [
+          "वडाध्यक्ष श्रेष्ठ"
+        ],
+        "details": "वडाध्यक्ष श्रेष्ठका अनुसार, प्रतिमहिना ३ हजार ९९० का दरले उनीहरूले गत बिहीबार भत्ता लिएका थिए।",
+        "event": "भत्ता लिए",
+        "resolved_time": "2023-07-20",
+        "time_expression": "गत बिहीबार",
+        "location": null
+      },
+      {
+        "actors": [
+          "परिवार"
+        ],
+        "details": "सिन्धुलीका प्रमुख जिल्ला अधिकारी (सीडीओ) दिनेश सागर भुसालका अनुसार, गत शुक्रबार साँझ ५ बजेर १९ मिनेटमा अटो चालकसँग उक्त परिवारका एक सदस्यले कुराकानी गरिएको भेटिएको हो ।",
+        "event": "अटो चालकसँग कुराकानी",
+        "resolved_time": "2023-07-21",
+        "time_expression": "शुक्रबार साँझ ५ बजेर १९ मिनेटमा",
+        "location": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731506/after-16-members-of-the-same-family-went-missing-from-their-village",
+    "title": "एकै परिवारका १६ जना गाउँबाटै हराएपछि…",
+    "published_date": "२०८२ साउन  १२ गते १३:३७",
+    "entities": [
+      {
+        "actors": [
+          "प्रहरी"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिकामा एकै परिवारका १६ जना हराएपछि प्रहरीले खोजतलास सुरु गरेको छ।",
+        "event": "खोजतलास सुरु",
+        "resolved_time": "2024-07-27",
+        "time_expression": "१२ साउन",
+        "location": "गोलन्जोर गाउँपालिका, सिन्धुली"
+      },
+      {
+        "actors": [
+          "उर्मिला हायुको परिवार"
+        ],
+        "details": "प्रहरीले हराएका उर्मिला हायुको परिवारको घरमा सामान्य क्षति र अलपत्र अवस्थामा पशु भेटिएको जानकारी दिएको छ।",
+        "event": "घरमा क्षति र पशु भेटियो",
+        "resolved_time": "2024-07-27",
+        "time_expression": "१२ साउन",
+        "location": "गोलन्जोर गाउँपालिका, सिन्धुली"
+      },
+      {
+        "actors": [
+          "स्थानीय जनप्रतिनिधि",
+          "गाउँले"
+        ],
+        "details": "स्थानीय जनप्रतिनिधि र गाउँलेसँग हराएका परिवारका सदस्यको बारेमा बुझ्ने काम भइरहेको छ।",
+        "event": "सदस्यको बारेमा सोधपुछ",
+        "resolved_time": "2024-07-27",
+        "time_expression": "१२ साउन",
+        "location": "सिन्धुली"
+      },
+      {
+        "actors": [
+          "उर्मिला हायुको परिवार"
+        ],
+        "details": "गोलन्जोर गाउँपालिका-६ स्थित छेत्पा नजिक भण्डास बिप्पर कटेरी भन्ने ठाउँमा बसोबास गर्दै आएकी उर्मिला हायुको १६ जनाको परिवार सोमबार बिहानदेखि हराएको भन्ने सूचना स्थानीयले जिल्ला प्रहरी कार्यालय सिन्धुलीमा गरेका थिए ।",
+        "event": "परिवार हराएको",
+        "resolved_time": "2024-07-22",
+        "time_expression": "सोमबार बिहानदेखि",
+        "location": "गोलन्जोर गाउँपालिका-६, छेत्पा नजिक भण्डास बिप्पर कटेरी"
+      },
+      {
+        "actors": [
+          "प्रहरी टोली"
+        ],
+        "details": "सोही सूचनाको आधारमा प्रहरी टोली हायुको घरमा पुगेर अनुसन्धान अघि बढाएको एसपी लालध्वज सुवेदीले अनलाइनखबरलाई जानकारी दिए ।",
+        "event": "अनुसन्धान सुरु",
+        "resolved_time": "2024-07-27",
+        "time_expression": "१२ साउन",
+        "location": "सिन्धुली"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731919/the-hayu-family-of-sindhuli-had-left-the-place-at-1-am",
+    "title": "रातको १ बजे छाडेका थिए सिन्धुलीका हायू परिवारले थातथलो",
+    "published_date": "२०८२ साउन  १२ गते २२:४८",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पाबाट बेपत्ता भएर पोखरामा भेटिएका उर्मिला हायूका परिवारले मध्यरातमा घर छाडेर हिँडेको पाइएको छ ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2023-07-27",
+        "time_expression": "१२ साउन",
+        "location": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पा"
+      },
+      {
+        "actors": [
+          "परिवार",
+          "स्थानीय जनप्रतिनिधि",
+          "प्रहरी प्रशासन"
+        ],
+        "details": "एकै परिवारका १६ जना परिवारका सदस्य बेपत्ता भएपछि दिनभर स्थानीय जनप्रतिनिधिदेखि प्रहरी प्रशासनसम्म खोजी कार्यमा लागेको थियो ।",
+        "event": "खोजी कार्य",
+        "resolved_time": "2023-07-27",
+        "time_expression": "दिनभर",
+        "location": null
+      },
+      {
+        "actors": [
+          "परिवार"
+        ],
+        "details": "उनीहरू पोखरा महानगरपालिका–३० स्थित गगनगौंडामा भेटिएका हुन् ।",
+        "event": "परिवार भेटिए",
+        "resolved_time": "2023-07-27",
+        "time_expression": "अन्तत:",
+        "location": "पोखरा महानगरपालिका–३० स्थित गगनगौंडा"
+      },
+      {
+        "actors": [
+          "परिवार"
+        ],
+        "details": "उक्त परिवारले गत साउन १० गते राति १ बजे आफ्नो थातथलो छाडेका थिए ।",
+        "event": "घर छाडे",
+        "resolved_time": "2023-07-25",
+        "time_expression": "गत साउन १० गते राति १ बजे",
+        "location": null
+      },
+      {
+        "actors": [
+          "जिल्ला प्रहरी कार्यालय सिन्धुली",
+          "जिल्ला प्रसासन कार्यालय",
+          "प्रहरी कार्यालय रामेछाप",
+          "टोली"
+        ],
+        "details": "उनीहरुलाई खोज्न जिल्ला प्रहरी कार्यालय सिन्धुली, जिल्ला प्रसासन कार्यालय  र प्रहरी कार्यालय रामेछापको टोली परिचालित भएका थिए ।",
+        "event": "टोली परिचालन",
+        "resolved_time": "2023-07-27",
+        "time_expression": "उनीहरुलाई खोज्न",
+        "location": null
+      },
+      {
+        "actors": [
+          "प्रहरी",
+          "श्याम कृष्ण थापा"
+        ],
+        "details": "रामेछापका प्रमुख जिल्ला अधिकारी श्याम कृष्ण थापाको नेतृत्वमा  रामेछापमा रहेका हायू समुदायको प्रत्येक घरमा प्रहरी पुगेको थियो ।",
+        "event": "प्रहरी हायू समुदायको घरमा",
+        "resolved_time": "2023-07-27",
+        "time_expression": "रामेछापमा",
+        "location": "रामेछाप"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731666/the-last-location-of-the-missing-hayu-family-before-their-mobile-phones-were-turned-off-was-simandichhap-ramechhap",
+    "title": "मोबाइल अफ हुनुअघि बेपत्ता हायू परिवारको अन्तिम लोकेसन रामेछापको सिमन्दीछाप",
+    "published_date": "२०८२ साउन  १२ गते १६:१९",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायूको परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिकाका १६ जनाको परिवार सोमबार बिहानदेखि बेपत्ता भएका छन् ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2024-07-29",
+        "time_expression": "सोमबार बिहानदेखि",
+        "location": "गोलन्जोर गाउँपालिका–६ स्थित छेत्पा नजिक भण्डास बिप्पर कटेरी"
+      },
+      {
+        "actors": [
+          "प्रहरी"
+        ],
+        "details": "बेपत्ता परिवारका सदस्यको मोबाइल अफ हुनुअघि अन्तिम लोकेसन पत्ता लागेपछि त्यहाँ रहेको हुनसक्ने आशंकाले प्रहरी घटनास्थलतर्फ गएको छ ।",
+        "event": "प्रहरीको खोजी",
+        "resolved_time": "2024-07-30",
+        "time_expression": "१२ साउन",
+        "location": "रामेछाप नगरपालिका–९ सिमन्दीछाप"
+      },
+      {
+        "actors": [
+          "प्रहरी"
+        ],
+        "details": "हायू समुदायको बसोबास रहेको रामेछाप नगरपालिकाको ८ र ९ मा प्रत्येक घरमा प्रहरी पुगेर खोजी कार्य भईरहेको जिल्ला प्रहरी कार्यालय रामेछापले जनाएको छ ।",
+        "event": "घर घरमा प्रहरीको खोजी",
+        "resolved_time": "2024-07-30",
+        "time_expression": "प्रत्येक घरमा",
+        "location": "रामेछाप नगरपालिकाको ८ र ९"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731744/these-are-the-names-of-16-members-of-the-same-family-who-went-missing-from-sindhuli",
+    "title": "यी हुन् सिन्धुलीबाट बेपत्ता भएका एकै परिवारका १६ जना (नामावली)",
+    "published_date": "२०८२ साउन  १२ गते १८:१७",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "कमला हायू",
+          "अर्जुन हायू",
+          "रियासा हायू",
+          "कोमल माया हायू",
+          "उषा हायू",
+          "सुजता हायू",
+          "अस्मिता हायू",
+          "शान्ता हायू",
+          "राजु हायू",
+          "हिमाल हायू",
+          "लालबहादुर हायू",
+          "बेगबहादुर हायू",
+          "लक्की हायू",
+          "सुवर्ण हायू",
+          "ओमकुमारी हायू"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका-६ स्थित छेत्पा नजिक भण्डास बिप्पर कटेरीबाट १६ जनाको परिवार चार दिनदेखि बेपत्ता छ। The missing family includes 52-year-old Urmila Hayu and her 27-year-old daughter Kamala Hayu, along with 16 members.",
+        "event": "Family Missing",
+        "resolved_time": "2024-07-26",
+        "time_expression": "चार दिनदेखि",
+        "location": "गोलन्जोर गाउँपालिका-६, छेत्पा नजिक भण्डास बिप्पर कटेरी"
+      },
+      {
+        "actors": [
+          "हायू परिवार"
+        ],
+        "details": "The Hayu family reportedly slaughtered and ate a pig at home before disappearing. According to SP Laldhwaj Subedi of the District Police Office Sindhuli, the missing Hayu family was found to have slaughtered and eaten a pig at home last Thursday (August 8).",
+        "event": "Pig Slaughter",
+        "resolved_time": "2024-07-23",
+        "time_expression": "गत बिहीबार (८ साउन)",
+        "location": null
+      },
+      {
+        "actors": [
+          "उर्मिला हायू"
+        ],
+        "details": "Three years ago, Urmila's husband disappeared, and his bones were found in the jungle. This information provides context to the current disappearance of Urmila Hayu and her family.",
+        "event": "Husband's Disappearance",
+        "resolved_time": "2021-07-28",
+        "time_expression": "तीन वर्षअघि",
+        "location": "जंगल"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731912/16-people-who-went-missing-from-sindhuli-are-in-contact-with-kaski-police-with-names",
+    "title": "सिन्धुलीबाट सम्पर्कविहीन भएका १६ जना कास्की प्रहरीको सम्पर्कमा (नामसहित)",
+    "published_date": "२०८२ साउन  १२ गते २२:३७",
+    "entities": [
+      {
+        "actors": [
+          "जिल्ला प्रहरी कार्यालय कास्की"
+        ],
+        "details": "जिल्ला प्रहरी कार्यालय कास्कीले सोमबार बेलुकी एक विज्ञप्ति जारी गर्दै छुट्टाछुट्टै घरमा भेटिएका १६ जनाको नाम सार्वजनिक गरेको हो ।",
+        "event": "१६ जनाको नामावली सार्वजनिक",
+        "resolved_time": "2024-07-29",
+        "time_expression": "सोमबार बेलुकी",
+        "location": "कास्की"
+      },
+      {
+        "actors": [
+          "नविन विक",
+          "उर्मिला हायू",
+          "अस्मिता हायू",
+          "लाल बहादुर हायू",
+          "ओम कुमारी हायू",
+          "कमला हायू",
+          "सान्ता हायू",
+          "बेग बहादुर हायू",
+          "अर्जुन हायू",
+          "कोमल माया हायू",
+          "राजु हायू",
+          "लक्की हायू",
+          "रियासा हायू",
+          "उषा हायू",
+          "हिमाल हायू",
+          "सुवर्ण हायू",
+          "पूर्ण हायू"
+        ],
+        "details": "उर्मिला हायूकी छोरा नविन विकले साउन १० गते राति १ बजेतिर सबै परिवारलाई मधेश प्रदेश ०५–००१ज.००८१ नम्बरको ईभी भ्यानमा राखेर पोखरा लगेका थिए ।",
+        "event": "परिवारलाई पोखरा लगे",
+        "resolved_time": "2024-07-26",
+        "time_expression": "साउन १० गते राति १ बजेतिर",
+        "location": "पोखरा"
+      },
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "अस्मिता हायू",
+          "लाल बहादुर हायू",
+          "ओम कुमारी हायू",
+          "कमला हायू",
+          "सान्ता हायू",
+          "बेग बहादुर हायू",
+          "अर्जुन हायू",
+          "कोमल माया हायू",
+          "राजु हायू",
+          "लक्की हायू",
+          "रियासा हायू",
+          "उषा हायू",
+          "हिमाल हायू",
+          "सुवर्ण हायू",
+          "पूर्ण हायू"
+        ],
+        "details": "उनीहरू खनियाँखर्क–सिन्धुली–हेटौंडा–मुग्लिन हुँदै पोखरा पुगेका थिए ।",
+        "event": "खनियाँखर्क–सिन्धुली–हेटौंडा–मुग्लिन हुँदै पोखरा पुगे",
+        "resolved_time": "2024-07-26",
+        "time_expression": "साउन १० गते",
+        "location": "पोखरा"
+      },
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "अस्मिता हायू",
+          "लाल बहादुर हायू",
+          "ओम कुमारी हायू",
+          "कमला हायू",
+          "सान्ता हायू",
+          "बेग बहादुर हायू",
+          "अर्जुन हायू",
+          "कोमल माया हायू",
+          "राजु हायू",
+          "लक्की हायू",
+          "रियासा हायू",
+          "उषा हायू",
+          "हिमाल हायू",
+          "सुवर्ण हायू",
+          "पूर्ण हायू"
+        ],
+        "details": "१० गते राति पोखरा लेकसाइडको होटल जननीमा बसेका उनीहरु भोलिपल्ट ११ गते चेकआउट गरी बाहिरिएका थिए ।",
+        "event": "होटल जननीमा बसे",
+        "resolved_time": "2024-07-27",
+        "time_expression": "१० गते राति",
+        "location": "पोखरा लेकसाइडको होटल जननी"
+      },
+      {
+        "actors": [
+          "उर्मिला हायू",
+          "अस्मिता हायू",
+          "लाल बहादुर हायू",
+          "ओम कुमारी हायू",
+          "कमला हायू",
+          "सान्ता हायू",
+          "बेग बहादुर हायू",
+          "अर्जुन हायू",
+          "कोमल माया हायू",
+          "राजु हायू",
+          "लक्की हायू",
+          "रियासा हायू",
+          "उषा हायू",
+          "हिमाल हायू",
+          "सुवर्ण हायू",
+          "पूर्ण हायू",
+          "सोमनाथ पौडेल",
+          "चन्द्र भण्डारी"
+        ],
+        "details": "त्यसपछि उनीहरुमध्येका १२ जना पोखरा महानगरपालिका–३० का स्थानीय सोमनाथ पौडेलको घरमा र बाँकी ४ जना सोही ठाउँका चन्द्र भण्डारीको घरमा शरण लिन पुगेका खुल्न आएको जिल्ला प्रहरी कार्यालय कास्कीका सूचना अधिकारी सूर्य प्रकाश सुवेदीले जानकारी दिए ।",
+        "event": "शरण लिन पुगे",
+        "resolved_time": "2024-07-27",
+        "time_expression": "११ गते",
+        "location": "पोखरा महानगरपालिका–३०"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731727/the-missing-family-members-were-returning-from-gwalior-by-auto-on-friday-evening",
+    "title": "शुक्रबार साँझ अटो चढेर ग्वालटारबाट फर्किएका थिए बेपत्ता परिवारका सदस्य",
+    "published_date": "२०८२ साउन  १२ गते १७:५९",
+    "entities": [
+      {
+        "actors": [
+          "family members"
+        ],
+        "details": "Family members who went missing from Galanjor-6, Sindhuli were found to have taken an auto from Gwalatar to near their home last Friday evening.",
+        "event": "Family Auto Ride",
+        "resolved_time": "2024-07-05",
+        "time_expression": "गत शुक्रबार साँझ",
+        "location": "ग्वालटार"
+      },
+      {
+        "actors": [
+          "police",
+          "CDO"
+        ],
+        "details": "Police and CDO officials are further investigating the auto driver.",
+        "event": "Auto Driver Investigation",
+        "resolved_time": "2024-07-12",
+        "time_expression": "अहिले",
+        "location": null
+      },
+      {
+        "actors": [
+          "family members"
+        ],
+        "details": "The family members withdrew their allowance from the bank last Thursday and have been missing since Saturday.",
+        "event": "Family Disappearance",
+        "resolved_time": "2024-07-06",
+        "time_expression": "शनिबारयता",
+        "location": null
+      },
+      {
+        "actors": [
+          "Raju Hayu"
+        ],
+        "details": "The eldest son of the family, Raju Hayu, had recently returned home from abroad.",
+        "event": "Son's Return",
+        "resolved_time": "2024-07-05",
+        "time_expression": "केही दिनअघिमात्रै",
+        "location": null
+      },
+      {
+        "actors": [
+          "Nepal Police",
+          "Armed Police"
+        ],
+        "details": "A team of Nepal Police under the command of SP is deployed for the search operation, and an Armed Police team has also been deployed.",
+        "event": "Search Operation",
+        "resolved_time": "2024-07-12",
+        "time_expression": "अहिले",
+        "location": null
+      },
+      {
+        "actors": [
+          "family members"
+        ],
+        "details": "The family received their allowance of NPR 3,990 per month last Thursday, totaling NPR 191,520.",
+        "event": "Allowance Collection",
+        "resolved_time": "2024-07-04",
+        "time_expression": "गत बिहीबार",
+        "location": "खुर्कोटमा रहेको हिमालयन बैंक"
+      },
+      {
+        "actors": [
+          "Sane Hayu"
+        ],
+        "details": "Another member of the family that disappeared from Golanjgar Rural Municipality-6, Chhetpa, Sane Hayu, the husband of Urmila Hayu, had similarly disappeared three years ago, and his remains were later found in the jungle.",
+        "event": "Previous Disappearance",
+        "resolved_time": "2021-07-12",
+        "time_expression": "तीन वर्षअघि",
+        "location": "गोलन्जगर गाउँपालिका–६ छेत्पा"
+      },
+      {
+        "actors": [
+          "Sane Hayu"
+        ],
+        "details": "Sane Hayu disappeared from home about three years ago, and his remains were found in the nearby jungle a few months later.",
+        "event": "Remains Found",
+        "resolved_time": "2021-07-12",
+        "time_expression": "केही महिनाको अन्तरालमा",
+        "location": "जंगल"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731650/mother-6-sons-6-daughters-daughter-in-law-granddaughter-and-son-in-law-missing",
+    "title": "आमासहित ६ छोरा, ६ छोरी, बुहारी, नातिनी र ज्वाइँ बेपत्ता",
+    "published_date": "२०८२ साउन  १२ गते १५:५७",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिला हायु",
+          "६ छोरा",
+          "६ छोरी",
+          "१ बुहारी",
+          "१ नातिनी",
+          "१ ज्वाइँ"
+        ],
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका-६ स्थित छेत्पा नजिक १६ जना एउटै परिवारका सदस्य चार दिनदेखि बेपत्ता भएका छन्।",
+        "event": "Family Missing",
+        "resolved_time": "2024-07-27",
+        "time_expression": "चार दिनदेखि",
+        "location": "गोलन्जोर गाउँपालिका-६, छेत्पा, सिन्धुली"
+      },
+      {
+        "actors": [
+          "उर्मिला हायु",
+          "राजु हायु",
+          "हिमाल हायु",
+          "लालबहादुर हायु",
+          "डेगबहादुर हायु",
+          "सुवर्ण हायु",
+          "लक्ष्मण हायु",
+          "कमला हायु",
+          "सुधा हायु",
+          "सुजता हायु",
+          "उषा हायु",
+          "अस्मिता हायु",
+          "कोमला हायु"
+        ],
+        "details": "बेपत्ता हुनेमा उर्मिला हायुसहित उनका ६ छोरा, ६ छोरी, १ बुहारी, १ नातिनी र १ जना ज्वाइँ रहेको प्रहरले जनाएको छ ।",
+        "event": "Missing Persons Identified",
+        "resolved_time": "2024-07-27",
+        "time_expression": "४ दिनदेखि",
+        "location": "भण्डास बिप्पर कटेरी, गोलन्जोर गाउँपालिका-६, सिन्धुली"
+      },
+      {
+        "actors": [
+          "unknown"
+        ],
+        "details": "उनीहरूको घरको पालीमा खरको छानाले बनाएको भान्सा मा १-२ दिन पहिले नै आगलागी भएको देखिएको तर घरको अन्य भागमा क्षती नभएको प्रहरीको भनाई छ ।",
+        "event": "Fire in Kitchen",
+        "resolved_time": "2024-07-25",
+        "time_expression": "१-२ दिन पहिले",
+        "location": null
+      },
+      {
+        "actors": [
+          "जिल्ला प्रहरी कार्यालय सिन्धुली"
+        ],
+        "details": "घरमा रहेका पशुचौपाया समेत सुरक्षित नै रहेको तथा घर तथा वरपरको क्षेत्रमा तलासी गर्दा निजहरु कतै नभेटिएको जिल्ला प्रहरी कार्यालय सिन्धुलीले जनाएको छ।",
+        "event": "Search and Rescue",
+        "resolved_time": "2024-07-27",
+        "time_expression": "घर तथा वरपरको क्षेत्रमा तलासी गर्दा",
+        "location": "सिन्धुली"
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731647/sindhuli-incident-neighbors-cut-grass-for-missing-familys-buffalo-for-three-days",
+    "title": "सिन्धुली घटना : बेपत्ता परिवारको भैँसीलाई तीन दिनसम्म छिमेकीले गरिदिए घाँसपात",
+    "published_date": "२०८२ साउन  १२ गते १५:५१",
+    "entities": [
+      {
+        "actors": [
+          "उर्मिलाको परिवार"
+        ],
+        "details": "सिन्धुलीको गोलन्जगर गाउँपालिका–६ छेत्पाबाट उर्मिलाको परिवार बेपत्ता भएका छन्, र प्रहरीले उनीहरुको खोजी भइरहेको छ ।",
+        "event": "परिवार बेपत्ता",
+        "resolved_time": "2024-07-27",
+        "time_expression": "शनिबारदेखि",
+        "location": "सिन्धुलीको गोलन्जगर गाउँपालिका–६ छेत्पा"
+      },
+      {
+        "actors": [
+          "एक्ले हायूको परिवार",
+          "सुमन कोइराला"
+        ],
+        "details": "तीन दिनसम्म भैँसी हेर्न नआएपछि हेर्न जाँदा घरमा कोही नभएको र सामानहरू भद्रगोल अवस्थामा देखिएको स्थानीय सुमन कोइरालाले बताए ।",
+        "event": "घरमा कोही नभएको",
+        "resolved_time": "2024-07-30",
+        "time_expression": "तीन दिनसम्म",
+        "location": null
+      },
+      {
+        "actors": [
+          "वडाध्यक्ष रबिन श्रेष्ठ",
+          "स्थानीय"
+        ],
+        "details": "स्थानीयले वडाध्यक्ष रबिन श्रेष्ठलाई आज बिहान ९ बजेतिर खबर गरेपछि यो घटना बाहिर आएको हो ।",
+        "event": "घटनाको खबर",
+        "resolved_time": "2024-07-27",
+        "time_expression": "आज बिहान ९ बजेतिर",
+        "location": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731593/missing-since-the-day-he-slaughtered-and-ate-pork-at-home-search-intensifies",
+    "title": "घरमै सुँगुर काटेर खाएको दिनदेखि सम्पर्कविहीन, रामेछापमा पनि खोजी सुरु",
+    "published_date": "२०८२ साउन  १२ गते १५:११",
+    "entities": [
+      {
+        "actors": [
+          "हायु परिवार"
+        ],
+        "details": "The Hayu family of 16 people had butchered and eaten a pig at their home before disappearing.",
+        "event": "Pig Butchering",
+        "resolved_time": "2020-07-23",
+        "time_expression": "गत बिहीबार (८ साउन)",
+        "location": "गोलन्जोर गाउँपालिका, सिन्धुली"
+      },
+      {
+        "actors": [
+          "उर्मिला हायु परिवार",
+          "स्थानीय प्रशासन",
+          "प्रहरी",
+          "बासिन्दा"
+        ],
+        "details": "The local administration, police, and residents have started searching for the missing Urmila Hayu family since Monday.",
+        "event": "Search for Missing Family",
+        "resolved_time": "2020-07-27",
+        "time_expression": "सोमबार बिहानदेखि",
+        "location": "गोलन्जोर गाउँपालिका–६, सिन्धुली"
+      },
+      {
+        "actors": [
+          "रामेछापका डीएसपी भोलाकुमार भट्ट",
+          "हायु परिवार"
+        ],
+        "details": "Police started searching for the Hayu family in Ramechhap, but they were not found.",
+        "event": "Search in Ramechhap",
+        "resolved_time": "2020-07-27",
+        "time_expression": "अहिले",
+        "location": "रामेछाप"
+      },
+      {
+        "actors": [
+          "उर्मिला हायुको परिवार"
+        ],
+        "details": "Urmila Hayu's family of 16 people disappeared from their isolated house.",
+        "event": "Family Disappearance",
+        "resolved_time": "2020-07-27",
+        "time_expression": "अहिले",
+        "location": "गोलन्जोर गाउँपालिका–६ स्थित छेत्पा नजिक भण्डास बिप्पर कटेरी"
+      }
+    ]
+  }
+]
