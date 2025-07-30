@@ -19,18 +19,13 @@ def call_gemini_llm(article, prompt):
                 "items": {"type": "string"},
                 "description": "List of people, organizations, or groups involved"
             },
-            "time_expression": {
-                "type": "string",
-                "description": "Time or date phrase as it appears in the article"
-            },
             "event_date": {
                 "type": "string",
-                "format": "date",
-                "description": "date in YYYY-MM-DD format"
+                "format": "YYYY-MM-DD",
+                "description": "date of the event occurence, use the published date as a reference for constructing the date if not explicitly mentioned"
             },
             "event_time": {
                 "type": ["string", "null"],
-                "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)$",
                 "description": "time in 24-hour format, or null if unknown"
             },
             "location": {
@@ -39,10 +34,10 @@ def call_gemini_llm(article, prompt):
             },
             "details": {
                 "type": "string",
-                "description": "Full sentence or two describing the event"
+                "description": "A sentence or two describing the event, including role of actors, location, and any other relevant details"
             }
         },
-        "required": ["event", "actors", "time_expression", "event_date", "details"]
+        "required": ["event", "actors", "event_date", "details","location"]
     }
 }
 
@@ -51,7 +46,7 @@ def call_gemini_llm(article, prompt):
         # The new google-genai expects a single string prompt
         full_prompt = f"{prompt}\n\n{article.get('content', '')}"
         response = client.models.generate_content(
-            model='gemini-2.0-flash',
+            model='gemini-2.5-flash',
             config=types.GenerateContentConfig(
                 response_mime_type = "application/json",
                 response_json_schema=event_extraction_schema,
@@ -81,12 +76,11 @@ def main():
 
     prompt = """You are an expert in event extraction from Nepali news articles.
 
-    Given the article title, published date, and content below, extract all distinct events.
-    २०८२ साउन १२ गतेको सोमबार थियो. Using this fact, construct the dates mentioned in the article. Use the nepali calendar date format (YYYY-MM-DD). Please pay extra attention to the dates mentioned in the article, and construct them based on the published date and reference fact date.
-    
+    Given the article title, published date, and content below, extract all distinct events. Reply in the same language as the article, Nepali.
+    Only return information that is relevant to the event and the main article.
     Here is the article metadata and content:
     """
-    
+
     # For each event, provide these fields:
     # - event: a short title or label
     # - actors: list of people, organizations, or groups involved
@@ -99,15 +93,21 @@ def main():
     results = []
     for article in articles:
         print(f"Processing: {article.get('url')}")
-        # You can pass the whole article or just the content/title as needed
-        response = call_gemini_llm(article, prompt)
-        results.append({
-            "url": article.get('url'),
+        # Only pass title, content, and published_date
+        minimal_article = {
             "title": article.get('title'),
             "published_date": article.get('published_date'),
+            "content": article.get('content')
+        }
+        response = call_gemini_llm(minimal_article, prompt)
+        results.append({
+            "title": minimal_article['title'],
+            "url": article.get('url'),
+            "published_date": minimal_article['published_date'],
+            "content": minimal_article['content'],
             "entities": response.get('entities', [])
         })
-        sleep(2)
+        sleep(1)
 
     # Save extracted entities to a new JSON file
     with open('src/data/article_entities.json', 'w', encoding='utf-8') as f:
