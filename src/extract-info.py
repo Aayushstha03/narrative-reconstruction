@@ -46,6 +46,7 @@ def call_gemini_llm(article, prompt):
     }
 }
 
+
     client = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
     try:
         # The new google-genai expects a single string prompt
