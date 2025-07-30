@@ -8,38 +8,39 @@ import json
 def call_gemini_llm(article, prompt):
 
     event_extraction_schema = {
-    "title": "Event Extraction Schema",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "event": {"type": "string", "description": "Short title or label for the event"},
-            "actors": {
-                "type": "array",
-                "items": {"type": "string"},
-                "description": "List of people, organizations, or groups involved"
+        "title": "Event Extraction Schema",
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "event": {"type": "string", "description": "Short title or label for the event"},
+                "actors": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "People, organizations, or groups directly involved in the event. Do not include generic terms, and actors that do not play a significant role in the event should be excluded."
+                },
+                "event_date": {
+                    "type": "string",
+                    "format": "YYYY-MM-DD",
+                    "description": "date of the event occurence, use the published date as a reference for constructing the date if not explicitly mentioned"
+                },
+                "event_time": {
+                    "type": ["string", "null"],
+                    "description": "time in 24-hour format, or null if unknown"
+                },
+                "location": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "List of places associated with the event."
+                },
+                "details": {
+                    "type": "string",
+                    "description": "A short summary of the event, including role of actors, location, and other relevant details"
+                }
             },
-            "event_date": {
-                "type": "string",
-                "format": "YYYY-MM-DD",
-                "description": "date of the event occurence, use the published date as a reference for constructing the date if not explicitly mentioned"
-            },
-            "event_time": {
-                "type": ["string", "null"],
-                "description": "time in 24-hour format, or null if unknown"
-            },
-            "location": {
-                "type": ["string", "null"],
-                "description": "Place associated with the event"
-            },
-            "details": {
-                "type": "string",
-                "description": "A sentence or two describing the event, including role of actors, location, and any other relevant details"
-            }
-        },
-        "required": ["event", "actors", "event_date", "details","location"]
+            "required": ["event", "actors", "event_date", "details","location"]
+        }
     }
-}
 
     client = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
     try:
