@@ -1,4 +1,3 @@
-# DEMO MAIN FOR TESTING DB AND PYTHON ENVIRONMENT IN DOCKER
 import psycopg
 import os
 

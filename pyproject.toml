@@ -1,7 +1,7 @@
 [project]
 name = "narrative-recon"
 version = "0.1.0"
-description = "Add your description here"
+description = "Scrape news articles, reconstruct narratives, and analyze them using Google GenAI."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -12,5 +12,6 @@ dependencies = [
     "lxml>=6.0.0",
     "nepali-datetime>=1.0.8.4",
     "pandas>=2.3.1",
+    "psycopg>=3.2.9",
     "requests>=2.32.4",
 ]
