@@ -10,4 +10,5 @@ COPY . .
 
 RUN uv sync --locked
 
-CMD ["uv", "run", "main.py"]
+# wait 5seconds for db to start beofore testing connection:)
+CMD ["sh", "-c", "for i in 1 2 3; do uv run src/test_postgres.py && break || (echo 'Retrying in 5s...' && sleep 5); done"]
