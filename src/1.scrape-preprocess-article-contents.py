@@ -264,7 +264,7 @@ def replace_time_concepts(text):
 
 
 def main():
-    df = pd.read_csv("src/data/articles.csv")
+    df = pd.read_csv("src/data/temp_data/articles.csv")
     results = []
     for url in df["url"]:
         print(f"Fetching: {url}")
@@ -289,9 +289,11 @@ def main():
     # Save results to a JSON file
     import json
 
-    with open("src/data/article_contents.json", "w", encoding="utf-8") as f:
+    with open("src/data/temp_data/article_contents.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print("Done. Saved to src/article_contents.csv and src/article_contents.json")
+    print(
+        "Done. Saved to src/temp_data/article_contents.csv and src/temp_data/article_contents.json"
+    )
 
 
 if __name__ == "__main__":

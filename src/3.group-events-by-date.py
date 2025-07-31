@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # Load the extracted entities
-with open("src/data/article_entities.json", "r", encoding="utf-8") as f:
+with open("src/data/temp_data/article_entities.json", "r", encoding="utf-8") as f:
     articles = json.load(f)
 
 
@@ -155,7 +155,7 @@ actor_prompt = (
     "Given the following list of actor names in Nepali, combine and reduce the set by merging different names that refer to the same actor. "
     "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'Nepal Police' : 'Nepal Police', 'Nepal Police Force'"
 )
-# prompt_gemini_for_unification(unique_actors, actor_prompt, 'src/data/actors.json')
+prompt_gemini_for_unification(unique_actors, actor_prompt, "src/data/actors.json")
 
 
 print("Unifying locations...")
@@ -165,7 +165,9 @@ location_prompt = (
     "Given the following list of location names in Nepali, combine and reduce the set by merging different names that refer to the same location. "
     "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'पोखरा' : 'पोखरा', 'पोखरा, नेपाल'"
 )
-# prompt_gemini_for_unification(unique_locations, location_prompt, 'src/data/locations.json')
+prompt_gemini_for_unification(
+    unique_locations, location_prompt, "src/data/locations.json"
+)
 
 print("Unifying article contents...")
 with open("src/data/actors.json", "r", encoding="utf-8") as f:
@@ -185,6 +187,6 @@ for date, events in grouped_by_date_sorted.items():
     for idx, event in enumerate(events, 1):
         event["id"] = f"{idx}"
 
-with open("src/data/grouped_events_by_date.json", "w", encoding="utf-8") as f:
+with open("src/data/temp_data/grouped_events_by_date.json", "w", encoding="utf-8") as f:
     json.dump(grouped_by_date_sorted, f, ensure_ascii=False, indent=2)
-print("Saved grouped events by date to src/data/grouped_events_by_date.json")
+print("Saved grouped events by date to swrc/data/temp_data/grouped_events_by_date.json")

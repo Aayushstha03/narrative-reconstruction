@@ -77,7 +77,7 @@ def call_gemini_llm(article, prompt):
 def main():
     # Load environment variables from .env
     load_dotenv()
-    with open("src/data/article_contents.json", "r", encoding="utf-8") as f:
+    with open("src/data/temp_date/article_contents.json", "r", encoding="utf-8") as f:
         articles = json.load(f)
 
     prompt = """You are an expert in event extraction from Nepali news articles.
@@ -109,9 +109,9 @@ def main():
         sleep(1)
 
     # Save extracted entities to a new JSON file
-    with open("src/data/article_entities.json", "w", encoding="utf-8") as f:
+    with open("src/data/temp_data/article_entities.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print("Done. Saved to src/article_entities.json")
+    print("Done. Saved to src/data/temp_data/article_entities.json")
 
 
 if __name__ == "__main__":
