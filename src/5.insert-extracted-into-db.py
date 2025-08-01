@@ -3,32 +3,34 @@ import os
 import json
 
 # Load DB connection from env
-DB_NAME = os.getenv("DB_NAME")
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
-DB_HOST = os.getenv("DB_HOST")
-DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv('DB_NAME')
+DB_USER = os.getenv('DB_USER')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_HOST = os.getenv('DB_HOST')
+DB_PORT = os.getenv('DB_PORT')
 
-conn_str = f"dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}"
+conn_str = f'dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}'
 
-with open("src/data/actors.json", "r", encoding="utf-8") as f:
+
+with open('src/data/actors.json', 'r', encoding='utf-8') as f:
     actors_data = json.load(f)
 
-with open("src/data/reconstructed_narrative.json", "r", encoding="utf-8") as f:
+
+with open('src/data/reconstructed_narrative.json', 'r', encoding='utf-8') as f:
     narrative_data = json.load(f)
 
 def insert_actors():
     """Insert actors and their aliases into the database."""
     with psycopg.connect(conn_str) as conn:
         with conn.cursor() as cur:
-            cur.execute("DELETE FROM actor_aliases;")
-            cur.execute("DELETE FROM actors;")
+            cur.execute('DELETE FROM actor_aliases;')
+            cur.execute('DELETE FROM actors;')
 
             for label, aliases in actors_data.items():
                 # Insert actor
                 cur.execute(
-                    "INSERT INTO actors (label) VALUES (%s) RETURNING id;",
-                    (label,)
+                    'INSERT INTO actors (label) VALUES (%s) RETURNING id;',
+                    (label,),
                 )
                 actor_id = cur.fetchone()[0]
 
@@ -42,13 +44,14 @@ def insert_actors():
 
             conn.commit()
 
-            cur.execute("SELECT * FROM actors LIMIT 3;")
-            print("Actors:")
+            # Check data
+            cur.execute('SELECT * FROM actors LIMIT 3;')
+            print('Actors:')
             for row in cur.fetchall():
                 print(row)
 
-            cur.execute("SELECT * FROM actor_aliases LIMIT 3;")
-            print("\nActor Aliases:")
+            cur.execute('SELECT * FROM actor_aliases LIMIT 3;')
+            print('\nActor Aliases:')
             for row in cur.fetchall():
                 print(row)
 
@@ -106,8 +109,8 @@ def insert_narrative():
                     # For each actor in this event
                     for actor_label in event["actors"]:
                         cur.execute(
-                            "SELECT id FROM actors WHERE label = %s;",
-                            (actor_label,)
+                            'SELECT id FROM actors WHERE label = %s;',
+                            (actor_label,),
                         )
                         result = cur.fetchone()
 
@@ -115,14 +118,14 @@ def insert_narrative():
                             actor_id = result[0]
                         else:
                             cur.execute(
-                                "INSERT INTO actors (label) VALUES (%s) RETURNING id;",
-                                (actor_label,)
+                                'INSERT INTO actors (label) VALUES (%s) RETURNING id;',
+                                (actor_label,),
                             )
                             actor_id = cur.fetchone()[0]
 
                         cur.execute(
-                            "INSERT INTO event_actors (event_id, actor_id) VALUES (%s, %s);",
-                            (event_id, actor_id)
+                            'INSERT INTO event_actors (event_id, actor_id) VALUES (%s, %s);',
+                            (event_id, actor_id),
                         )
 
             conn.commit()
@@ -142,6 +145,7 @@ def insert_narrative():
             for row in cur.fetchall():
                 print(row)
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     insert_actors()
     insert_narrative()
