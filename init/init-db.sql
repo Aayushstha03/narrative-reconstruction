@@ -25,12 +25,17 @@ CREATE TABLE sources (
 CREATE TABLE events (
     id SERIAL PRIMARY KEY,
     label TEXT NOT NULL,
-    details TEXT,
-    source_id INTEGER REFERENCES sources(id) ON DELETE SET NULL
+    details TEXT
 );
 
 CREATE TABLE event_actors (
     id SERIAL PRIMARY KEY,
     event_id INTEGER NOT NULL REFERENCES events(id) ON DELETE CASCADE,
     actor_id INTEGER NOT NULL REFERENCES actors(id) ON DELETE CASCADE
+);
+
+CREATE TABLE event_sources (
+  id SERIAL PRIMARY KEY,
+  event_id INT REFERENCES events(id) ON DELETE CASCADE,
+  source_id INT REFERENCES sources(id) ON DELETE CASCADE
 );
