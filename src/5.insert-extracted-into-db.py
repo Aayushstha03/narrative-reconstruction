@@ -9,6 +9,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")
 
+conn_str = f"dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}"
 
 
 with open("src/data/actors.json", "r", encoding="utf-8") as f:
@@ -19,7 +20,6 @@ with open("src/data/reconstructed_narrative.json", "r", encoding="utf-8") as f:
     narrative_data = json.load(f)
 
 def insert_sources():
-    conn_str = f"dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}"
 
     with psycopg.connect(conn_str) as conn:
         with conn.cursor() as cur:
@@ -55,7 +55,8 @@ def insert_sources():
 
 
 def insert_actors():
-    conn_str = f"dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}"
+
+    """Insert actors and their aliases into the database."""
 
     with psycopg.connect(conn_str) as conn:
         with conn.cursor() as cur:
@@ -99,7 +100,6 @@ def insert_narrative():
 
     """Insert events, their sources and associated actors into the database."""
 
-    conn_str = f"dbname={DB_NAME} user={DB_USER} password={DB_PASSWORD} host={DB_HOST} port={DB_PORT}"
 
     with psycopg.connect(conn_str) as conn:
         with conn.cursor() as cur:
@@ -120,7 +120,7 @@ def insert_narrative():
                     if source_id:
                         source_id = source_id[0]
                     else:
-                        # If not found, insert it
+                        # If not found, insert the source
                         source = event["sources"][0]
                         title = source["title"]
                         published_date = source["published_date"].split(" ")[0]
@@ -177,7 +177,7 @@ def insert_narrative():
             for row in cur.fetchall():
                 print(row)
 
-            cur.execute("SELECT * FROM event_actors LIMIT 5;")
+            cur.execute("SELECT * FROM event_actors LIMIT 3;")
             print("\nEvent-Actors:")
             for row in cur.fetchall():
                 print(row)
