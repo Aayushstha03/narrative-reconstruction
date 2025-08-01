@@ -1,5 +1,7 @@
-import psycopg
+
 import os
+from selenium import webdriver
+import psycopg
 
 # Load DB connection parameters from environment variables, with defaults
 DB_NAME = os.getenv("DB_NAME")

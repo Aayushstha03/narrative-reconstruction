@@ -9,11 +9,20 @@ services:
       - "5432:5432"
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+      - ./pyproject.toml:/app/pyproject.toml
 
   app:
     build:
       context: .
       dockerfile: Dockerfile
+
+    develop:
+      watch:
+        # Rebuild the image on changes to the `pyproject.toml`
+        - action: rebuild
+          path: ./pyproject.toml
+
     depends_on:
       - db
     environment:
@@ -22,5 +31,7 @@ services:
       DB_PASSWORD: password
       DB_HOST: db
       DB_PORT: 5432
+    volumes:
+      - ./src:/app/src
+
     tty: true
-    stdin_open: true
