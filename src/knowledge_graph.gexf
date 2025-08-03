@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-08-03">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="role" type="string" />
+      <attribute id="1" title="details" type="string" />
+      <attribute id="2" title="url" type="string" />
+      <attribute id="3" title="published_date" type="string" />
+    </attributes>
+    <nodes>
+      <node id="actor_7" label="उर्मिला हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_1" label="सने हायू बेपत्ता र हाडखोर भेटिएको">
+        <attvalues>
+          <attvalue for="1" value="उर्मिला हायूका श्रीमान् सने हायू करिब तीन वर्षअघि घरबाट बेपत्ता भएका थिए र पछि नजिकैको जंगलमा उनको हाडखोर भेटिएको थियो।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="source_1" label="शुक्रबार साँझ अटो चढेर ग्वालटारबाट फर्किएका थिए बेपत्ता परिवारका सदस्य">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731727/the-missing-family-members-were-returning-from-gwalior-by-auto-on-friday-evening" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_44" label="सने हायू">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_39" label="राजु हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_2" label="जेठा छोराको विदेशबाट घर फिर्ती">
+        <attvalues>
+          <attvalue for="1" value="परिवारका जेठा छोरा राजु हायू केही दिनअघि विदेशबाट घर फर्किएका थिए।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_24" label="जिल्ला प्रहरी कार्यालय सिन्धुली">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_3" label="सिन्धुलीमा १६ जनाको हायू परिवार बेपत्ता">
+        <attvalues>
+          <attvalue for="1" value="सिन्धुलीको गोलन्जोर गाउँपालिका-६, छेत्पा नजिक भण्डास बिप्पर कटेरीमा बसोबास गर्दै आएकी उर्मिला हायुको १६ जनाको परिवार ४ दिनदेखि बेपत्ता भएको छ। बेपत्ता हुनेमा उर्मिला हायुसहित उनका ६ छोरा, ६ छोरी, १ बुहारी, १ नातिनी र १ जना ज्वाइँ छन्। उनीहरू 2025-07-24 देखि सम्पर्कविहीन भएका हुन्। बेपत्ता हुनुअघि उनीहरूले घरमै सुँगुर काटेर खाएको पाइएको थियो। घर नजिकैको एक छाप्रोमा आगो लागेर निभाइएको जस्तो देखिएको छ, काठहरू डढेका छन् र केही लुगा तथा पकाउने भाँडाहरू घर बाहिरै भेटिएका छन्। परिवारका सदस्यहरूले गत बिहीबार खुर्कोटको हिमालयन बैंकबाट १ लाख ९१ हजार ५ सय २० रुपैयाँ सामाजिक सुरक्षा भत्ता बुझेका थिए।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="source_2" label="सिन्धुलीबाट बेपत्ता एकै परिवारका १६ जनामध्ये १२ जना पोखरामा भेटिए">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731892/12-of-16-members-of-the-same-family-missing-from-sindhuli-found-in-pokhara" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_11" label="लालध्वज सुवेदी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_34" label="प्रहरी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_15" label="कोमला हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_4" label="अस्मिता हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_9" label="उषा हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_47" label="सुजता हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_61" label="सुधा हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_13" label="कमला हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_42" label="लक्ष्मण हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_50" label="सुवर्ण हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_26" label="डेगबहादुर हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_43" label="लालबहादुर हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_57" label="हिमाल हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_55" label="हायु परिवार">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="source_3" label="चकित पार्ने सिन्धुली घटना : कहाँ बेपत्ता भए हायू परिवारका १६ सदस्य ?">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731788/shocking-sindhuli-incident-where-did-16-members-of-the-same-family-disappear-to" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_4" label="यी हुन् सिन्धुलीबाट बेपत्ता भएका एकै परिवारका १६ जना (नामावली)">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731744/these-are-the-names-of-16-members-of-the-same-family-who-went-missing-from-sindhuli" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_5" label="आमासहित ६ छोरा, ६ छोरी, बुहारी, नातिनी र ज्वाइँ बेपत्ता">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731650/mother-6-sons-6-daughters-daughter-in-law-granddaughter-and-son-in-law-missing" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_6" label="घरमै सुँगुर काटेर खाएको दिनदेखि सम्पर्कविहीन, रामेछापमा पनि खोजी सुरु">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731593/missing-since-the-day-he-slaughtered-and-ate-pork-at-home-search-intensifies" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_1" label="अटो चालक">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_4" label="सिन्धुलीमा हायू परिवारको रहस्यमय बेपत्ता र खोजी अभियान">
+        <attvalues>
+          <attvalue for="1" value="सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पाबाट उर्मिला हायूको १६ जनाको परिवार साउन १० गते मध्यराति रहस्यमय तरिकाले सम्पर्कविहीन भयो। उनीहरुले छेत्पामा आफूहरूधेरै बिरामी हुने गरेकोले थातथलो छोडेर हिँडेको र नफर्किने बताएका थिए। परिवार सम्पर्कविहीन भएपछि प्रहरीले उनीहरूको खोजी अभियान थालेको थियो। खोजीका क्रममा last Friday साँझ ५ बजेर १९ मिनेटमा परिवारका सदस्यहरू ग्वालटार बजारबाट अटो चढेर घर छेउसम्म पुगेको र अटो चालकसँग कुराकानी गरी घर जाने ठाउँमा छाडिदिएको भेटिएको थियो। अटो चालकले उनीहरूलाई सडकबाट घरतर्फ लागेको बताएका छन्।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="source_7" label="हायु परिवारलाई प्रहरीले लगायो आफन्तको जिम्मा">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731988/police-put-hayu-family-in-the-care-of-relatives" />
+          <attvalue for="3" value="2025-07-29" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_53" label="स्थानीय जनप्रतिनिधि">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_5" label="सिन्धुलीको हायू परिवारको बेपत्ता र पोखरामा खोजी">
+        <attvalues>
+          <attvalue for="1" value="सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पामा बस्ने उर्मिला हायूको १६ जनाको परिवार 2025-07-26 (शनिबार) राति १ बजे ईभी भ्यानमा पोखराका लागि हिँडेका थिए। उर्मिला हायूकी छोरा नविन विकले मधेश प्रदेश ०५–००१ज.००८१ नम्बरको ईभी भ्यानमा परिवारलाई पोखरा लगेका थिए। पोखरा पुगेपछि उनीहरू लेकसाइडस्थित होटल जननीमा तीन वटा कोठा लिएर बसेका थिए। परिवार शनिबारदेखि बेपत्ता भएपछि छिमेकीहरूले तीन दिनसम्म नदेखेपछि स्थानीय जनप्रतिनिधिलाई खबर गरेका थिए। उनीहरुको घर एकान्त ठाउँमा छ र तीन दिनसम्म भैँसी हेर्न नआएपछि घरमा कोही नभएको र सामानहरू भद्रगोल अवस्थामा देखिएको छ। १६ जना परिवारका सदस्य बेपत्ता भएको खबर पाएपछि सिन्धुली, रामेछाप र कास्की प्रशासनले उनीहरुको खोजी गरेको थियो।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="source_8" label="पोखरामा भेटिएका हायू परिवार भन्छन्- सिन्धुली फर्कन्नौं, धेरै बिरामी पर्‍यौं">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731911/hayu-family-found-in-pokhara-says-lets-not-return-to-sindhuli-we-are-very-sick" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_19" label="छिमेकी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_14" label="कास्की प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_40" label="रामेछाप प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_46" label="सिन्धुली प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_29" label="नविन विक">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="source_9" label="रातको १ बजे छाडेका थिए सिन्धुलीका हायू परिवारले थातथलो">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731919/the-hayu-family-of-sindhuli-had-left-the-place-at-1-am" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_10" label="सिन्धुलीबाट सम्पर्कविहीन भएका १६ जना कास्की प्रहरीको सम्पर्कमा (नामसहित)">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731912/16-people-who-went-missing-from-sindhuli-are-in-contact-with-kaski-police-with-names" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_11" label="सिन्धुली घटना : बेपत्ता परिवारको भैँसीलाई तीन दिनसम्म छिमेकीले गरिदिए घाँसपात">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731647/sindhuli-incident-neighbors-cut-grass-for-missing-familys-buffalo-for-three-days" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="actor_49" label="सुनिल भूर्तेल">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_6" label="उर्मिला हायूको १६ जनाको परिवार होटल जननीबाट चेकआउट">
+        <attvalues>
+          <attvalue for="1" value="उर्मिला हायूको १६ जनाको परिवार गत आइतबार (२०२५-०७-२७) लेकसाइडस्थित होटल जननीबाट चेकआउट गरी निस्किएको थियो। होटल सञ्चालक सुनिल भूर्तेलले उनीहरू आइतबार बाहिरिएको पुष्टि गरेका छन्।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_8" label="उर्मिला हायुको परिवार">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_18" label="चन्द्र भण्डारी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_7" label="उर्मिला हायूको परिवारले पोखरामा शरण लिए">
+        <attvalues>
+          <attvalue for="1" value="होटलबाट चेकआउट गरेपछि उर्मिला हायूको १६ जनाको परिवार पोखरा महानगरपालिका–३० स्थित गगनगौंडामा सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा शरण लिन पुगेका थिए। १२ जना सोमनाथ पौडेलको घरमा र बाँकी ४ जना चन्द्र भण्डारीको घरमा बसेका थिए।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_51" label="सोमनाथ पौडेल">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_41" label="रामेछापका प्रमुख जिल्ला अधिकारी श्याम कृष्ण थापा">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_8" label="बेपत्ता उर्मिला हायूको परिवारको खोजी कार्य जारी">
+        <attvalues>
+          <attvalue for="1" value="सिन्धुलीबाट बेपत्ता भएका उर्मिला हायूका १६ जना परिवारका सदस्यको खोजी कार्यमा स्थानीय जनप्रतिनिधि, प्रहरी प्रशासन, जिल्ला प्रहरी कार्यालय सिन्धुली, जिल्ला प्रसासन कार्यालय र प्रहरी कार्यालय रामेछापको टोली परिचालित भएको छ। उनीहरूको मोबाइलको अन्तिम लोकेशन रामेछापको सिमन्दीछापमा देखिएको थियो।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_35" label="प्रहरी कार्यालय रामेछाप">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_21" label="जिल्ला प्रसासन कार्यालय">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_36" label="प्रहरी प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_9" label="बेपत्ता परिवारको घरको भान्सामा आगलागी">
+        <attvalues>
+          <attvalue for="1" value="बेपत्ता परिवारको घरको पालीमा खरको छानाले बनाएको भान्सामा १-२ दिन पहिले नै आगलागी भएको देखिएको छ तर घरको अन्य भागमा क्षती नभएको प्रहरीले जनाएको छ।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_17" label="गोलन्जोर गाउँपालिका अध्यक्ष शंकरराज बराल">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="event_10" label="सिन्धुलीबाट बेपत्ता भएको उर्मिला हायूको १६ जनाको परिवार पोखरामा भेटिए">
+        <attvalues>
+          <attvalue for="1" value="सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पाबाट उर्मिला हायूको १६ जनाको परिवार बेपत्ता भएको खबर अनलाइनखबरले प्रकाशित गरेपछि प्रहरी, प्रशासन, स्थानीय जनप्रतिनिधि र आफन्तसहितको टोलीले खोजी कार्य सुरु गरेको थियो। छिमेकीले घर अलपत्र अवस्थामा फेला पारेर प्रहरीलाई खबर गरेका थिए। प्रहरीले मोबाइल ट्रेसिङमार्फत उनीहरूको अन्तिम लोकेसन रामेछापमा पत्ता लगाएर खोजी कार्यलाई तीव्र पारेको थियो। अन्ततः उनीहरू पोखरा महानगरपालिका–३० स्थित गगनगौंडामा सोमनाथ पौडेल र चन्द्र भण्डारीको दुई वटा घरमा ज्यामी काम गर्न आएको भन्दै शरण लिएर बसेको अवस्थामा भेटिएका छन्। जिल्ला प्रहरी कार्यालय कास्कीले उनीहरूलाई नियन्त्रणमा लिएर सोधखोज गरी आफन्त धनबहादुर र अमिस तामाङको जिम्मा लगाएको छ। बेपत्ता भेटिएकाको नामावली पनि सार्वजनिक गरिएको छ।" />
+          <attvalue for="0" value="event" />
+        </attvalues>
+      </node>
+      <node id="actor_54" label="स्थानीय प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_38" label="रबिन श्रेष्ठ">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_23" label="जिल्ला प्रहरी कार्यालय रामेछाप">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_16" label="गृह मन्त्रालय">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_45" label="सशस्त्र प्रहरी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_30" label="नेपाल प्रहरी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_5" label="आफन्त">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_25" label="डीएसपी भोलाकुमार भट्ट">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_32" label="प्रमुख जिल्ला अधिकारी दिनेश सागर भुसाल">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_52" label="स्थानीय">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_6" label="इन्स्पेक्टर">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_37" label="बच्छु हायु">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_27" label="दुर्गाप्रसाद सुवेदी">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_3" label="अमिस तामाङ">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_28" label="धनबहादुर तामाङ">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_12" label="एसपी श्यामबाबु ओलिया">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_22" label="जिल्ला प्रहरी कार्यालय कास्की">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_33" label="प्रशासन">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="actor_2" label="अनलाइनखबर">
+        <attvalues>
+          <attvalue for="0" value="actor" />
+        </attvalues>
+      </node>
+      <node id="source_12" label="एकै परिवारका १६ जना गाउँबाटै हराएपछि…">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731506/after-16-members-of-the-same-family-went-missing-from-their-village" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+      <node id="source_13" label="मोबाइल अफ हुनुअघि बेपत्ता हायू परिवारको अन्तिम लोकेसन रामेछापको सिमन्दीछाप">
+        <attvalues>
+          <attvalue for="2" value="https://www.onlinekhabar.com/2025/07/1731666/the-last-location-of-the-missing-hayu-family-before-their-mobile-phones-were-turned-off-was-simandichhap-ramechhap" />
+          <attvalue for="3" value="2025-07-28" />
+          <attvalue for="0" value="source" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="actor_7" target="event_1" id="0" />
+      <edge source="actor_7" target="event_3" id="1" />
+      <edge source="event_1" target="source_1" id="2" />
+      <edge source="actor_44" target="event_1" id="3" />
+      <edge source="actor_39" target="event_2" id="4" />
+      <edge source="actor_39" target="event_3" id="5" />
+      <edge source="event_2" target="source_1" id="6" />
+      <edge source="actor_24" target="event_3" id="7" />
+      <edge source="actor_24" target="event_8" id="8" />
+      <edge source="actor_24" target="event_10" id="9" />
+      <edge source="event_3" target="source_2" id="10" />
+      <edge source="event_3" target="source_3" id="11" />
+      <edge source="event_3" target="source_4" id="12" />
+      <edge source="event_3" target="source_1" id="13" />
+      <edge source="event_3" target="source_5" id="14" />
+      <edge source="event_3" target="source_6" id="15" />
+      <edge source="actor_11" target="event_3" id="16" />
+      <edge source="actor_11" target="event_10" id="17" />
+      <edge source="actor_34" target="event_3" id="18" />
+      <edge source="actor_34" target="event_4" id="19" />
+      <edge source="actor_34" target="event_9" id="20" />
+      <edge source="actor_34" target="event_10" id="21" />
+      <edge source="actor_15" target="event_3" id="22" />
+      <edge source="actor_4" target="event_3" id="23" />
+      <edge source="actor_9" target="event_3" id="24" />
+      <edge source="actor_47" target="event_3" id="25" />
+      <edge source="actor_61" target="event_3" id="26" />
+      <edge source="actor_13" target="event_3" id="27" />
+      <edge source="actor_42" target="event_3" id="28" />
+      <edge source="actor_50" target="event_3" id="29" />
+      <edge source="actor_26" target="event_3" id="30" />
+      <edge source="actor_43" target="event_3" id="31" />
+      <edge source="actor_57" target="event_3" id="32" />
+      <edge source="actor_55" target="event_3" id="33" />
+      <edge source="actor_55" target="event_4" id="34" />
+      <edge source="actor_55" target="event_5" id="35" />
+      <edge source="actor_1" target="event_4" id="36" />
+      <edge source="event_4" target="source_7" id="37" />
+      <edge source="event_4" target="source_2" id="38" />
+      <edge source="event_4" target="source_3" id="39" />
+      <edge source="event_4" target="source_1" id="40" />
+      <edge source="actor_53" target="event_5" id="41" />
+      <edge source="actor_53" target="event_8" id="42" />
+      <edge source="actor_53" target="event_10" id="43" />
+      <edge source="event_5" target="source_8" id="44" />
+      <edge source="event_5" target="source_7" id="45" />
+      <edge source="event_5" target="source_2" id="46" />
+      <edge source="event_5" target="source_9" id="47" />
+      <edge source="event_5" target="source_10" id="48" />
+      <edge source="event_5" target="source_1" id="49" />
+      <edge source="event_5" target="source_11" id="50" />
+      <edge source="actor_19" target="event_5" id="51" />
+      <edge source="actor_19" target="event_10" id="52" />
+      <edge source="actor_14" target="event_5" id="53" />
+      <edge source="actor_40" target="event_5" id="54" />
+      <edge source="actor_46" target="event_5" id="55" />
+      <edge source="actor_29" target="event_5" id="56" />
+      <edge source="actor_49" target="event_6" id="57" />
+      <edge source="event_6" target="source_8" id="58" />
+      <edge source="event_6" target="source_2" id="59" />
+      <edge source="event_6" target="source_10" id="60" />
+      <edge source="actor_8" target="event_6" id="61" />
+      <edge source="actor_8" target="event_7" id="62" />
+      <edge source="actor_8" target="event_10" id="63" />
+      <edge source="actor_18" target="event_7" id="64" />
+      <edge source="actor_18" target="event_10" id="65" />
+      <edge source="event_7" target="source_8" id="66" />
+      <edge source="event_7" target="source_10" id="67" />
+      <edge source="actor_51" target="event_7" id="68" />
+      <edge source="actor_51" target="event_10" id="69" />
+      <edge source="actor_41" target="event_8" id="70" />
+      <edge source="event_8" target="source_9" id="71" />
+      <edge source="actor_35" target="event_8" id="72" />
+      <edge source="actor_21" target="event_8" id="73" />
+      <edge source="actor_36" target="event_8" id="74" />
+      <edge source="event_9" target="source_5" id="75" />
+      <edge source="actor_17" target="event_10" id="76" />
+      <edge source="event_10" target="source_8" id="77" />
+      <edge source="event_10" target="source_7" id="78" />
+      <edge source="event_10" target="source_2" id="79" />
+      <edge source="event_10" target="source_3" id="80" />
+      <edge source="event_10" target="source_12" id="81" />
+      <edge source="event_10" target="source_9" id="82" />
+      <edge source="event_10" target="source_13" id="83" />
+      <edge source="event_10" target="source_10" id="84" />
+      <edge source="event_10" target="source_1" id="85" />
+      <edge source="event_10" target="source_5" id="86" />
+      <edge source="event_10" target="source_11" id="87" />
+      <edge source="event_10" target="source_6" id="88" />
+      <edge source="actor_54" target="event_10" id="89" />
+      <edge source="actor_38" target="event_10" id="90" />
+      <edge source="actor_23" target="event_10" id="91" />
+      <edge source="actor_16" target="event_10" id="92" />
+      <edge source="actor_45" target="event_10" id="93" />
+      <edge source="actor_30" target="event_10" id="94" />
+      <edge source="actor_5" target="event_10" id="95" />
+      <edge source="actor_25" target="event_10" id="96" />
+      <edge source="actor_32" target="event_10" id="97" />
+      <edge source="actor_52" target="event_10" id="98" />
+      <edge source="actor_6" target="event_10" id="99" />
+      <edge source="actor_37" target="event_10" id="100" />
+      <edge source="actor_27" target="event_10" id="101" />
+      <edge source="actor_3" target="event_10" id="102" />
+      <edge source="actor_28" target="event_10" id="103" />
+      <edge source="actor_12" target="event_10" id="104" />
+      <edge source="actor_22" target="event_10" id="105" />
+      <edge source="actor_33" target="event_10" id="106" />
+      <edge source="actor_2" target="event_10" id="107" />
+    </edges>
+  </graph>
+</gexf>
