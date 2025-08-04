@@ -16,10 +16,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
 
     develop:
       watch:
-        # Rebuild the image on changes to the `pyproject.toml`
         - action: rebuild
           path: ./pyproject.toml
 
@@ -33,5 +34,3 @@ services:
       DB_PORT: 5432
     volumes:
       - ./src:/app/src
-
-    tty: true
