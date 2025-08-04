@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+Dockerfile
+docker-compose.yml
+
+postgres_data/
+
+.env
+.env.*
+
+build/
+.venv/
+
+.pytest_cache/
+.ruff_cache/

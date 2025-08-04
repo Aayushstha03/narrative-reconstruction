@@ -4,6 +4,7 @@ from google.genai import types
 from dotenv import load_dotenv
 import os
 import json
+ 
 
 def call_gemini_llm(article, prompt):
 
