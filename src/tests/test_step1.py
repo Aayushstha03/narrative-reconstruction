@@ -4,6 +4,7 @@ import requests
 from .. import step1_scrape_and_preprocess_articles as spa
 
 
+@pytest.mark.filecheck
 def test_websites_csv_exists():
     # Check if websites.csv exists in expected location
     csv_path = os.path.join(
@@ -12,6 +13,7 @@ def test_websites_csv_exists():
     assert os.path.isfile(csv_path), f'{csv_path} does not exist'
 
 
+@pytest.mark.apicheck
 def test_scraping_api_is_up():
     # Use a known working URL for a simple GET request
     url = 'https://www.google.com'
@@ -22,6 +24,7 @@ def test_scraping_api_is_up():
         pytest.fail(f'API service not available: {e}')
 
 
+@pytest.mark.contentextract
 def test_extract_title_and_content_full_html():
     html = """
     <html>
@@ -42,6 +45,7 @@ def test_extract_title_and_content_full_html():
     assert 'Paragraph 2' in content
 
 
+@pytest.mark.contentextract
 def test_extract_title_and_content_missing_title():
     html = """
     <html>
@@ -59,6 +63,7 @@ def test_extract_title_and_content_missing_title():
     assert 'Paragraph 1' in content
 
 
+@pytest.mark.contentextract
 def test_extract_title_and_content_missing_date():
     html = """
     <html>
@@ -76,6 +81,7 @@ def test_extract_title_and_content_missing_date():
     assert 'Paragraph 1' in content
 
 
+@pytest.mark.contentextract
 def test_extract_title_and_content_missing_content_div():
     html = """
     <html>
@@ -94,6 +100,7 @@ def test_extract_title_and_content_missing_content_div():
     assert 'Fallback Paragraph 2' in content
 
 
+@pytest.mark.contentextract
 def test_extract_title_and_content_empty_html():
     html = ''
     title, published_date, content = spa.extract_title_and_content(html)

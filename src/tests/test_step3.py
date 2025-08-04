@@ -1,3 +1,4 @@
+import pytest
 from src.step3_clean_extracted_events import (
     get_unique_field_values,
     canonicalize_actor,
@@ -7,6 +8,7 @@ from src.step3_clean_extracted_events import (
 )
 
 
+@pytest.mark.datatransform
 def test_get_unique_field_values_list():
     articles = [
         {'entities': [{'actors': ['A', 'B'], 'location': 'X'}]},
@@ -16,6 +18,7 @@ def test_get_unique_field_values_list():
     assert result == {'A', 'B', 'C'}
 
 
+@pytest.mark.datatransform
 def test_get_unique_field_values_single():
     articles = [
         {'entities': [{'actors': ['A'], 'location': 'X'}]},
@@ -25,18 +28,21 @@ def test_get_unique_field_values_single():
     assert result == {'X', 'Y'}
 
 
+@pytest.mark.datatransform
 def test_canonicalize_actor():
     mapping = {'Nepal Police': ['Nepal Police', 'Nepal Police Force']}
     assert canonicalize_actor('Nepal Police Force', mapping) == 'Nepal Police'
     assert canonicalize_actor('Random', mapping) == 'Random'
 
 
+@pytest.mark.datatransform
 def test_canonicalize_location():
     mapping = {'पोखरा': ['पोखरा', 'पोखरा, नेपाल']}
     assert canonicalize_location('पोखरा, नेपाल', mapping) == 'पोखरा'
     assert canonicalize_location('काठमाण्डौ', mapping) == 'काठमाण्डौ'
 
 
+@pytest.mark.datatransform
 def test_canonicalize_articles():
     articles = [
         {
@@ -52,6 +58,7 @@ def test_canonicalize_articles():
     assert result[0]['entities'][0]['location'] == 'पोखरा'
 
 
+@pytest.mark.datatransform
 def test_group_events_by_date():
     articles = [
         {

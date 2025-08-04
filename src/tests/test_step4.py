@@ -1,3 +1,4 @@
+import pytest
 import json
 import tempfile
 import os
@@ -7,6 +8,7 @@ from src.step4_create_narrative import (
 )
 
 
+@pytest.mark.datatransform
 def test_extract_event_fields_by_date():
     sample = {
         '2024-01-01': [
@@ -38,6 +40,7 @@ def test_extract_event_fields_by_date():
     os.remove(f.name)
 
 
+@pytest.mark.datatransform
 def test_enrich_narrative_with_source_articles():
     grouped_events = {
         '2024-01-01': [

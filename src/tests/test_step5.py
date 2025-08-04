@@ -3,6 +3,7 @@ import pytest
 
 
 # Test DB connection string from environment
+@pytest.mark.database
 def test_db_connection():
     import psycopg
 

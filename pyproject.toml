@@ -29,6 +29,4 @@ quote-style = "single"
 indent-style = "space"
 
 [dependency-groups]
-dev = [
-    "ruff>=0.12.7",
-]
+dev = ["ruff>=0.12.7"]
