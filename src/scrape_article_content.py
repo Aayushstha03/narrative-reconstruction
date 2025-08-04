@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+
 def extract_title_and_content(html):
     soup = BeautifulSoup(html, 'lxml')
     # Get title from <h1 class="entry-title">
@@ -28,6 +29,7 @@ def extract_title_and_content(html):
 
     return title, published_date, content
 
+
 def fetch_url_content(url):
     try:
         response = requests.get(url, timeout=10)
@@ -35,7 +37,7 @@ def fetch_url_content(url):
         # Always decode as UTF-8 to avoid mojibake
         return response.content.decode('utf-8', errors='replace')
     except Exception as e:
-        print(f"Failed to fetch {url}: {e}")
+        print(f'Failed to fetch {url}: {e}')
         return None
 
 
@@ -43,18 +45,29 @@ def main():
     df = pd.read_csv('src/data/articles.csv')
     results = []
     for url in df['url']:
-        print(f"Fetching: {url}")
+        print(f'Fetching: {url}')
         html = fetch_url_content(url)
         if html:
             title, published_date, content = extract_title_and_content(html)
         else:
             title, published_date, content = '', '', ''
-        results.append({'url': url, 'title': title, 'published_date': published_date, 'content': content})
+        results.append(
+            {
+                'url': url,
+                'title': title,
+                'published_date': published_date,
+                'content': content,
+            }
+        )
     # Save results to a JSON file
     import json
+
     with open('src/article_contents.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print("Done. Saved to src/article_contents.csv and src/article_contents.json")
+    print(
+        'Done. Saved to src/article_contents.csv and src/article_contents.json'
+    )
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     main()
