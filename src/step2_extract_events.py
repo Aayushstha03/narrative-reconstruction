@@ -86,7 +86,7 @@ def main():
     # Load environment variables from .env
     load_dotenv()
     with open(
-        'src/data/temp_date/article_contents.json', 'r', encoding='utf-8'
+        'src/data/temp_data/article_contents.json', 'r', encoding='utf-8'
     ) as f:
         articles = json.load(f)
 

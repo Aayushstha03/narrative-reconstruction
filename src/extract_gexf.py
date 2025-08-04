@@ -7,7 +7,7 @@ def fetch_joined_tuples(date_from: str):
     """
     Connects to the database and returns joined tuples:
     (actor_id, actor_label, event_id, event_label, event_details,
-     source_id, source_title, source_url, published_date)
+    source_id, source_title, source_url, published_date)
     """
     DB_NAME = os.getenv('DB_NAME')
     DB_USER = os.getenv('DB_USER')

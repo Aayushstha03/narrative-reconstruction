@@ -1,4 +1,3 @@
-import pytest
 import networkx as nx
 from .. import extract_gexf
 

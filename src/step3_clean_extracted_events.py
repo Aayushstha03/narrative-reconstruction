@@ -154,53 +154,51 @@ def group_events_by_date(articles):
     return grouped_by_date, per_date_events
 
 
-# Call Gemini to unify actor names and save mapping
-print('Unifying actors...')
-unique_actors = get_unique_field_values(articles, 'actors', is_list=True)
-actor_prompt = (
-    'Given the following list of actor names in Nepali, combine and reduce the set by merging different names that refer to the same actor. '
-    "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'Nepal Police' : 'Nepal Police', 'Nepal Police Force'"
-)
-prompt_gemini_for_unification(
-    unique_actors, actor_prompt, 'src/data/actors.json'
-)
+if __name__ == '__main__':
+    # Call Gemini to unify actor names and save mapping
+    print('Unifying actors...')
+    unique_actors = get_unique_field_values(articles, 'actors', is_list=True)
+    actor_prompt = (
+        'Given the following list of actor names in Nepali, combine and reduce the set by merging different names that refer to the same actor. '
+        "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'Nepal Police' : 'Nepal Police', 'Nepal Police Force'"
+    )
+    prompt_gemini_for_unification(
+        unique_actors, actor_prompt, 'src/data/actors.json'
+    )
 
+    print('Unifying locations...')
+    unique_locations = get_unique_field_values(
+        articles, 'location', is_list=True
+    )
+    location_prompt = (
+        'Given the following list of location names in Nepali, combine and reduce the set by merging different names that refer to the same location. '
+        "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'पोखरा' : 'पोखरा', 'पोखरा, नेपाल'"
+    )
+    prompt_gemini_for_unification(
+        unique_locations, location_prompt, 'src/data/locations.json'
+    )
 
-print('Unifying locations...')
-# Call Gemini to unify location names and save mapping
-unique_locations = get_unique_field_values(articles, 'location', is_list=True)
-location_prompt = (
-    'Given the following list of location names in Nepali, combine and reduce the set by merging different names that refer to the same location. '
-    "Return a key value pair such that the key is unified/canonical name, and the values are names that refer to the same actor, e.g.'पोखरा' : 'पोखरा', 'पोखरा, नेपाल'"
-)
-prompt_gemini_for_unification(
-    unique_locations, location_prompt, 'src/data/locations.json'
-)
+    print('Unifying article contents...')
+    with open('src/data/actors.json', 'r', encoding='utf-8') as f:
+        actor_mapping = json.load(f)
+    with open('src/data/locations.json', 'r', encoding='utf-8') as f:
+        location_mapping = json.load(f)
+    articles_canonical = canonicalize_articles(
+        articles, actor_mapping, location_mapping
+    )
 
-print('Unifying article contents...')
-with open('src/data/actors.json', 'r', encoding='utf-8') as f:
-    actor_mapping = json.load(f)
-with open('src/data/locations.json', 'r', encoding='utf-8') as f:
-    location_mapping = json.load(f)
-articles_canonical = canonicalize_articles(
-    articles, actor_mapping, location_mapping
-)
+    # Group events by date using canonicalized articles, sort by date, and save only the final grouped events JSON
+    grouped_by_date, per_date_events = group_events_by_date(articles_canonical)
+    grouped_by_date_sorted = dict(sorted(grouped_by_date.items()))
 
-# Save the canonicalized articles
+    for date, events in grouped_by_date_sorted.items():
+        for idx, event in enumerate(events, 1):
+            event['id'] = f'{idx}'
 
-# Group events by date using canonicalized articles, sort by date, and save only the final grouped events JSON
-grouped_by_date, per_date_events = group_events_by_date(articles_canonical)
-# Sort the grouped_by_date dictionary by date (key)
-grouped_by_date_sorted = dict(sorted(grouped_by_date.items()))
-
-for date, events in grouped_by_date_sorted.items():
-    for idx, event in enumerate(events, 1):
-        event['id'] = f'{idx}'
-
-with open(
-    'src/data/temp_data/grouped_events_by_date.json', 'w', encoding='utf-8'
-) as f:
-    json.dump(grouped_by_date_sorted, f, ensure_ascii=False, indent=2)
-print(
-    'Saved grouped events by date to swrc/data/temp_data/grouped_events_by_date.json'
-)
+    with open(
+        'src/data/temp_data/grouped_events_by_date.json', 'w', encoding='utf-8'
+    ) as f:
+        json.dump(grouped_by_date_sorted, f, ensure_ascii=False, indent=2)
+    print(
+        'Saved grouped events by date to swrc/data/temp_data/grouped_events_by_date.json'
+    )
