@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+
 def extract_title_and_content(html):
     soup = BeautifulSoup(html, 'lxml')
     # Get title from <h1 class="entry-title">
@@ -59,7 +60,7 @@ def main():
                 'content': content,
             }
         )
-   
+
     with open('src/data/article_contents.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(

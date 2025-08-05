@@ -1,9 +1,9 @@
 from time import sleep
 import google.genai as genai
 from google.genai import types
-from dotenv import load_dotenv
 import os
 import json
+
 
 def call_gemini_llm(article, prompt):
     event_extraction_schema = {
@@ -117,8 +117,6 @@ def call_gemini_llm(article, prompt):
             if entities.strip().startswith('{') or entities.strip().startswith(
                 '['
             ):
-                
-
                 entities = json.loads(entities)
         except Exception:
             entities = response.text
@@ -130,7 +128,6 @@ def call_gemini_llm(article, prompt):
 
 def main():
     # Load environment variables from .env
-    load_dotenv()
     with open('src/data/article_contents.json', 'r', encoding='utf-8') as f:
         articles = json.load(f)
 
@@ -174,8 +171,6 @@ def main():
 
     """
     #   - If the fact describes an action or event (e.g., leaving, finding, handing over), always model the action as a separate `Event` entity, not as the subject or object directly.
-
-
 
     results = []
     for article in articles:
