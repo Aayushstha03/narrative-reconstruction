@@ -34,3 +34,20 @@ services:
       DB_PORT: 5432
     volumes:
       - ./src:/app/src
+
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: [ "uv", "run", "python", "src/worker/scraper_worker.py" ]
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - db
+    environment:
+      DB_NAME: mydatabase
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_HOST: db
+      DB_PORT: 5432
+    
