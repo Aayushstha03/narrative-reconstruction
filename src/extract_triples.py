@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import os
 import json
 
-
 def call_gemini_llm(article, prompt):
     event_extraction_schema = {
         'title': 'News RDF Triples Extraction Schema',
@@ -118,9 +117,9 @@ def call_gemini_llm(article, prompt):
             if entities.strip().startswith('{') or entities.strip().startswith(
                 '['
             ):
-                import json as _json
+                
 
-                entities = _json.loads(entities)
+                entities = json.loads(entities)
         except Exception:
             entities = response.text
         return {'entities': entities}
@@ -141,18 +140,18 @@ def main():
         From the given news text, extract all significant facts as RDF triples.
 
         Rules:  
-      
+        - Keep the triples values/name  and details exactly as the original text, don't translate it to english.
         - Subjects and objects must be specific named entities with a valid schema.org type.
         - Subjects and objects can never be common noun/phrases, events, primitive types, and adjective phrases. 
         - Use only schema.org properties for predicates.  
-        - Don't translate the language, even for "details".
+        - Don't translate the language, keep it exactly the same.
         - Each triple must include:
         - subject: a schema.org entity with @type, name, id if possible, and any extracted properties.
         - predicate: a valid schema.org property that logically matches its subject and object types.
         - object: a schema.org entity if appropriate, or a literal value if the object is just text or a number.
 
         Additional instructions:  
-        - If the fact describes an action or event (e.g., leaving, finding, handing over), always model the action as a separate `Event` entity, not as the subject or object directly.
+      
         - Do not use vague or overly generic types (like Thing) if a more precise type exists.
         - Use the same ID and name for any entity that appears under different names but refers to the same real-world thing.
         - Only include a triple if the information is precise enough to be meaningful. Skip vague, speculative, or redundant statements.
@@ -174,20 +173,14 @@ def main():
         Here is the article metadata and content:
 
     """
+    #   - If the fact describes an action or event (e.g., leaving, finding, handing over), always model the action as a separate `Event` entity, not as the subject or object directly.
 
-    # For each event, provide these fields:
-    # - event: a short title or label
-    # - actors: list of people, organizations, or groups involved
-    # - time_expression: the original date/time phrase from the article
-    # - event_date: the date (YYYY-MM-DD), using the published_date, identify the date the event occurred in if it's not explicitly mentioned, like day before is one day before the published date.
-    # - event_time: the time (24-hour format), use cues like morning, afternoon, evening, to create sample times as well.
-    # - location: place associated with the event (if any)
-    # - details: a full sentence or two describing the event
+
 
     results = []
     for article in articles:
         print(f'Processing: {article.get("url")}')
-        # You can pass the whole article or just the content/title as needed
+
         response = call_gemini_llm(article, prompt)
         results.append(
             {
@@ -200,9 +193,9 @@ def main():
         sleep(2)
 
     # Save extracted entities to a new JSON file
-    with open('src/data/article_entities.json', 'w', encoding='utf-8') as f:
+    with open('src/data/article_triples.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print('Done. Saved to src/article_entities.json')
+    print('Done. Saved to src/article_triples.json')
 
 
 if __name__ == '__main__':

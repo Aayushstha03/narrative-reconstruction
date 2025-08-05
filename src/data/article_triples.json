@@ -1,0 +1,331 @@
+[
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731911/hayu-family-found-in-pokhara-says-lets-not-return-to-sindhuli-we-are-very-sick",
+    "title": "पोखरामा भेटिएका हायू परिवार भन्छन्- सिन्धुली फर्कन्नौं, धेरै बिरामी पर्‍यौं",
+    "published_date": "२०८२ साउन  १२ गते २२:३६",
+    "entities": [
+      {
+        "_date": "2024-07-27",
+        "details": "उर्मिला हायूको परिवारका १६ जना पोखरामा भेटिएका छन्।",
+        "object": {
+          "@type": "Person",
+          "name": "उर्मिला हायू"
+        },
+        "predicate": "familyName",
+        "subject": {
+          "@type": "Person",
+          "name": "परिवारका १६ जना"
+        },
+        "time_expression": "१२ साउन",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "सिन्धुलीको गोलन्जोर गाउँपालिका–६ छेत्पा नजिक भण्डास बिप्पर कटेरी भन्ने ठाउँमा बसोबास गर्ने उर्मिला हायूको परिवारका १६ जना अन्तत: पोखरामा भेटिएका छन् ।",
+        "object": {
+          "@type": "City",
+          "name": "पोखरा"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उर्मिला हायूको परिवारका १६ जना"
+        },
+        "time_expression": "१२ साउन",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "जिल्ला प्रहरी कार्यालय, कास्कीका एसपी श्यामबाबु ओलियाका अनुसार, उनीहरू पोखरा महानगरपालिका–३० स्थित दुई वटा घरमा बाँडिएर बसेको अवस्थामा भेटिएका हुन् ।",
+        "object": {
+          "@type": "Place",
+          "name": "पोखरा महानगरपालिका–३०"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "आज",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "होटलका सञ्चालक सुनिल भूर्तेलका अनुसार, सो दिन उनीहरू तीन वटा कोठा लिएर बसेका थिए ।",
+        "object": {
+          "@type": "Hotel",
+          "name": "होटल जननी"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "शनिबार",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "प्रहरी, प्रशासन, स्थानीय जनप्रतिनिधिसहितको टोली खोजी कार्यका लागि सक्रिय भएको थियो ।",
+        "object": {
+          "@type": "Organization",
+          "name": "प्रहरी"
+        },
+        "predicate": "member",
+        "subject": {
+          "@type": "Organization",
+          "name": "टोली"
+        },
+        "time_expression": "त्यसपछि",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "अन्तत: साँझ उनीहरू पोखरा पुगेको भेटिए ।",
+        "object": {
+          "@type": "City",
+          "name": "पोखरा"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "साँझ",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "उनीहरू इलाका प्रहरी कार्यालय सिसुवाको सम्पर्कमा रहेको एसपी ओलियाले बताए ।",
+        "object": {
+          "@type": "PoliceStation",
+          "name": "इलाका प्रहरी कार्यालय सिसुवा"
+        },
+        "predicate": "contactPoint",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "अहिले",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "स्थानीय सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा भेटिएका हुन् ।",
+        "object": {
+          "@type": "Person",
+          "name": "सोमनाथ पौडेल"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "सिन्धुलीका उक्त परिवारका सदस्यहरू"
+        },
+        "time_expression": "undefined",
+        "time": null
+      },
+      {
+        "_date": "2024-07-27",
+        "details": "स्थानीय सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा भेटिएका हुन् ।",
+        "object": {
+          "@type": "Person",
+          "name": "चन्द्र भण्डारी"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "सिन्धुलीका उक्त परिवारका सदस्यहरू"
+        },
+        "time_expression": "undefined",
+        "time": null
+      }
+    ]
+  },
+  {
+    "url": "https://www.onlinekhabar.com/2025/07/1731988/police-put-hayu-family-in-the-care-of-relatives",
+    "title": "हायु परिवारलाई प्रहरीले लगायो आफन्तको जिम्मा",
+    "published_date": "२०८२ साउन  १३ गते ८:०७",
+    "entities": [
+      {
+        "_date": "2024-07-29",
+        "details": "उर्मिला हायूका परिवारलाई प्रहरीले आफन्तको जिम्मा लगाएको छ",
+        "object": {
+          "@type": "Person",
+          "name": "उर्मिला हायूका परिवार"
+        },
+        "predicate": "subjectOf",
+        "subject": {
+          "@type": "Organization",
+          "name": "प्रहरी"
+        },
+        "time_expression": "सोमबार राति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-29",
+        "details": "उनीहरुलाई प्रहरीले धनबहादुर र अमिस तामाङको जिम्मा लगाएको हो",
+        "object": {
+          "@type": "Person",
+          "name": "धनबहादुर"
+        },
+        "predicate": "agent",
+        "subject": {
+          "@type": "Organization",
+          "name": "प्रहरी"
+        },
+        "time_expression": "सोमबार राति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-29",
+        "details": "उनीहरुलाई प्रहरीले धनबहादुर र अमिस तामाङको जिम्मा लगाएको हो",
+        "object": {
+          "@type": "Person",
+          "name": "अमिस तामाङ"
+        },
+        "predicate": "agent",
+        "subject": {
+          "@type": "Organization",
+          "name": "प्रहरी"
+        },
+        "time_expression": "सोमबार राति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-29",
+        "details": "धनबहादुर हराएकीमध्य कमलाका श्रीमान् हुन्",
+        "object": {
+          "@type": "Person",
+          "name": "कमला"
+        },
+        "predicate": "spouse",
+        "subject": {
+          "@type": "Person",
+          "name": "धनबहादुर"
+        },
+        "time_expression": "सोमबार राति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-29",
+        "details": "वडाध्यक्ष दुर्गाप्रसाद सुवेदीलगायतको रोहबरमा उनीहरुलाई जिम्मा लगाइएको प्रहरीले जनाएको छ",
+        "object": {
+          "@type": "Person",
+          "name": "दुर्गाप्रसाद सुवेदी"
+        },
+        "predicate": "performer",
+        "subject": {
+          "@type": "Organization",
+          "name": "प्रहरी"
+        },
+        "time_expression": "सोमबार राति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "हायु परिवारले यही साउन १० गते मध्यराति थातथलो छोडेर बेपत्ता भएका थिए",
+        "object": {
+          "@type": "Place",
+          "name": "थातथलो"
+        },
+        "predicate": "departurePlace",
+        "subject": {
+          "@type": "Person",
+          "name": "हायु परिवार"
+        },
+        "time_expression": "यही साउन\n१० गते मध्यराति",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "सिन्धुलीबाट पोखरा पुगेर होटेलमा बसेका उनीहरु अन्तत: पोखराकै गगनगौंडामा भेटिएका थिए",
+        "object": {
+          "@type": "City",
+          "name": "सिन्धुली"
+        },
+        "predicate": "departurePlace",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरु"
+        },
+        "time_expression": "सिन्धुलीबाट पोखरा",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "सिन्धुलीबाट पोखरा पुगेर होटेलमा बसेका उनीहरु अन्तत: पोखराकै गगनगौंडामा भेटिएका थिए",
+        "object": {
+          "@type": "City",
+          "name": "पोखरा"
+        },
+        "predicate": "arrivalPlace",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरु"
+        },
+        "time_expression": "सिन्धुलीबाट पोखरा",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "सिन्धुलीबाट पोखरा पुगेर होटेलमा बसेका उनीहरु अन्तत: पोखराकै गगनगौंडामा भेटिएका थिए",
+        "object": {
+          "@type": "Hotel",
+          "name": "होटेल"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरु"
+        },
+        "time_expression": "सिन्धुलीबाट पोखरा",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "सिन्धुलीबाट पोखरा पुगेर होटेलमा बसेका उनीहरु अन्तत: पोखराकै गगनगौंडामा भेटिएका थिए",
+        "object": {
+          "@type": "Place",
+          "name": "गगनगौंडा"
+        },
+        "predicate": "location",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरु"
+        },
+        "time_expression": "अन्तत: पोखराकै गगनगौंडामा",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "स्थानीय सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा पुगेर उनीहरूले आफूहरू ज्यामी काम गर्न आएको भन्दै शरण लिएका थिए",
+        "object": {
+          "@type": "Person",
+          "name": "सोमनाथ पौडेल"
+        },
+        "predicate": "knows",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "स्थानीय",
+        "time": null
+      },
+      {
+        "_date": "2024-07-26",
+        "details": "स्थानीय सोमनाथ पौडेल र चन्द्र भण्डारीको घरमा पुगेर उनीहरूले आफूहरू ज्यामी काम गर्न आएको भन्दै शरण लिएका थिए",
+        "object": {
+          "@type": "Person",
+          "name": "चन्द्र भण्डारी"
+        },
+        "predicate": "knows",
+        "subject": {
+          "@type": "Person",
+          "name": "उनीहरू"
+        },
+        "time_expression": "स्थानीय",
+        "time": null
+      }
+    ]
+  }
+]

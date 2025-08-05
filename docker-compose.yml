@@ -11,6 +11,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./db-init/:/docker-entrypoint-initdb.d/
 
   app:
     build: .
@@ -26,8 +27,11 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://myuser:mypassword@db:5432/mydb
       GEMINI_API_KEY: ${GEMINI_API_KEY}
+      POSTGRES_HOST: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database-1
     tty: true
 
 volumes:
