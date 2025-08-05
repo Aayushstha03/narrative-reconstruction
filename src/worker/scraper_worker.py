@@ -1,6 +1,6 @@
 import asyncio
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 
@@ -14,8 +14,8 @@ async def scraper_loop():
     while True:
         article = {
             'id': str(uuid.uuid4()),
-            'title': f'Scraped Article at {datetime.utcnow().strftime("%H:%M:%S")}',
-            'timestamp': datetime.utcnow().isoformat(),
+            'title': f'Scraped Article at {datetime.now(timezone.utc).strftime("%H:%M:%S")}',
+            'timestamp': datetime.now(timezone.utc).isoformat(),
         }
 
         articles = json.loads(DATA_FILE.read_text())
