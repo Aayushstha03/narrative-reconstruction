@@ -24,6 +24,7 @@ services:
           path: ./pyproject.toml
     volumes:
       - ./src:/app/src
+      - ./tests:/app/tests
     depends_on:
       - db
     environment:

@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://example.com/news/123",
+    "title": "Sample News Title",
+    "published_date": "2024-01-01",
+    "entities": [
+      {
+        "subject": {
+          "@type": "Person",
+          "name": "Sample Name",
+          "id": "person:sample-person",
+          "additionalProperties": {}
+        },
+        "predicate": "organizer",
+        "object": {
+          "@type": "Event",
+          "name": "Sample Event",
+          "id": "event:sample-event",
+          "additionalProperties": {}
+        },
+        "time_expression": "2025-01-01",
+        "_date": "2025-01-01",
+        "time": "13:00:00",
+        "details": "Sample event details."
+      }
+    ]
+  }
+]

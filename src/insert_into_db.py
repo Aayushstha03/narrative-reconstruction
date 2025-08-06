@@ -88,7 +88,6 @@ def process_article(conn, article: dict):
                         object_name = _object['name']
                     elif 'value' in _object:
                         object_name = str(_object['value'])
-                   
 
                     object_id = get_or_create_entity(
                         cur, object_name, _object['@type']
