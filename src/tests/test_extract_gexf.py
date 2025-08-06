@@ -1,5 +1,5 @@
 import networkx as nx
-from .. import extract_gexf
+from scripts import extract_gexf
 
 
 def test_fetch_joined_tuples(monkeypatch):

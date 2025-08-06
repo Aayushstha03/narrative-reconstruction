@@ -2,10 +2,11 @@ import subprocess
 import sys
 
 scripts = [
-    '1.scrape-preprocess-article-contents.py',
-    '2.extract-events.py',
-    '3.group-events-by-date.py',
-    '4.create-narrative.py',
+    'scripts/step1_scrape_and_preprocess_articles.py',
+    'scripts/step2_extract_events.py',
+    'scripts/step3_clean_extracted_events.py',
+    'scripts/step4_create_narrative.py',
+    'scripts/step5_insert_narratives_into_db.py',
 ]
 
 

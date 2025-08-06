@@ -8,6 +8,7 @@ from time import sleep
 # Path to the grouped events file
 GROUPED_EVENTS_PATH = os.path.join(
     os.path.dirname(__file__),
+    '..',
     'data',
     'temp_data',
     'grouped_events_by_date.json',
@@ -150,7 +151,7 @@ if __name__ == '__main__':
         original_data = json.load(f)
 
     output_path = os.path.join(
-        os.path.dirname(__file__), 'data', 'reconstructed_narrative.json'
+        os.path.dirname(__file__), '..', 'data', 'reconstructed_narrative.json'
     )
     # Use extract_event_fields_by_date to filter fields for Gemini
     filtered_data = extract_event_fields_by_date(GROUPED_EVENTS_PATH)

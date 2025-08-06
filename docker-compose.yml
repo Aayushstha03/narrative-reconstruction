@@ -34,19 +34,33 @@ services:
       DB_PORT: 5432
     volumes:
       - ./src:/app/src
-  # scraper:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   command: [ "uv", "run", "python", "src/worker/scraper_worker.py" ]
-  #   volumes:
-  #     - ./src:/app/src
-  #   depends_on:
-  #     - db
-  #   environment:
-  #     DB_NAME: mydatabase
-  #     DB_USER: user
-  #     DB_PASSWORD: password
-  #     DB_HOST: db
-  #     DB_PORT: 5432
 
+  redis:
+    container_name: redis
+    image: redis:8.2-alpine
+
+  celery_worker:
+    container_name: celery_worker
+    build: .
+    command: uv run celery -A src.celery_worker.celery_app worker --loglevel=info
+    volumes:
+      - ./src:/app/src
+    env_file:
+      - .env
+    depends_on:
+      - app
+      - redis
+      # flower:
+      # container_name: flower
+      # build: .
+      # command: uv run celery -A src.celery_worker.celery_app flower --port=5555
+      # ports:
+      # - "5555:5555"
+      # environment:
+      # - CELERY_BROKER_URL=${CELERY_BROKER_URL}
+      # - CELERY_RESULT_BACKEND=${CELERY_RESULT_BACKEND}
+      # depends_on:
+      # - app
+      # - redis
+      # - celery_worker
+      #
