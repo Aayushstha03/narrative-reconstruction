@@ -14,5 +14,3 @@ COPY uv.lock .
 
 # Install all dependencies
 RUN uv sync --locked
-
-COPY . .

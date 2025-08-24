@@ -24,3 +24,12 @@ CREATE TABLE triples (
     FOREIGN KEY (object_id) REFERENCES entities(entity_id) ON DELETE CASCADE,
     FOREIGN KEY (source_id) REFERENCES sources(source_id) ON DELETE SET NULL
 );
+
+-- Create table for scraped articles
+CREATE TABLE articles (
+    article_id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    url TEXT NOT NULL,
+    published_at TIMESTAMP NOT NULL
+);

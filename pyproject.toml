@@ -1,25 +1,27 @@
 [project]
 name = "narrative-recon"
 version = "0.1.0"
-description = "Add your description here"
+description = "Narrative reconstruction"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.13.4",
     "dateparser>=1.2.2",
     "dotenv>=0.9.9",
+    "fastapi[standard]>=0.116.1",
     "google-genai>=1.27.0",
     "lxml>=6.0.0",
     "pandas>=2.3.1",
     "psycopg>=3.2.9",
     "pytest>=8.4.1",
     "requests>=2.32.4",
-    "ruff>=0.12.7",
+    "uvicorn>=0.35.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "ruff>=0.12.7"
+    "ruff>=0.12.7",
+    
 ]
 
 [tool.ruff]

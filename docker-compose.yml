@@ -25,6 +25,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./tests:/app/tests
+
     depends_on:
       - db
     environment:
@@ -33,6 +34,44 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database-1
+    tty: true
+
+  scraper:
+    build: .
+    container_name: scraper
+
+    develop:
+      watch:
+        # Rebuild the image on changes to the `pyproject.toml`
+        - action: rebuild
+          path: ./pyproject.toml
+    volumes:
+      - ./scraper:/app/scraper
+
+    depends_on:
+      - db
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database-1
+    command: uv run scraper/scrape_articles.py
+
+  api:
+    build: .
+    container_name: api
+    command: uv run uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database-1
+    depends_on:
+      - db
+    volumes:
+      - ./api:/app/api
     tty: true
 
 volumes:
