@@ -3,19 +3,12 @@ services:
     image: redis:alpine
     ports:
       - "6379:6379"
-  app:
-    build: .
-    image: narrative-reconstruction:latest
-    command: uv run fastapi dev src/api/main.py --host 0.0.0.0 --port 8000 --reload
-    ports:
-      - "8000:8000"
-    depends_on:
-      - redis
-      - celery_worker
-      # - db
-    volumes:
-      - ./src:/app/src
-
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
   celery_worker:
     build: .
     image: narrative-reconstruction:latest
@@ -23,8 +16,8 @@ services:
     volumes:
       - ./src:/app/src
     depends_on:
-      - redis
-
+      redis:
+        condition: service_healthy
   flower:
     build: .
     image: narrative-reconstruction:latest
@@ -32,7 +25,27 @@ services:
     ports:
       - "5555:5555"
     depends_on:
-      - redis
+      redis:
+        condition: service_healthy
+      celery_worker:
+        condition: service_started
+  app:
+    build: .
+    image: narrative-reconstruction:latest
+    command: uv run fastapi dev src/api/main.py --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    depends_on:
+      redis:
+        condition: service_healthy
+      celery_worker:
+        condition: service_started
+      flower:
+        condition: service_started
+      # - db
+    volumes:
+      - ./src:/app/src
+
   db:
     image: postgres
     environment:
