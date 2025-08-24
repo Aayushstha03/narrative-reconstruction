@@ -35,7 +35,7 @@ CREATE TABLE event_actors (
 );
 
 CREATE TABLE event_sources (
-  id SERIAL PRIMARY KEY,
-  event_id INT REFERENCES events(id) ON DELETE CASCADE,
-  source_id INT REFERENCES sources(id) ON DELETE CASCADE
+    id SERIAL PRIMARY KEY,
+    event_id INT REFERENCES events(id) ON DELETE CASCADE,
+    source_id INT REFERENCES sources(id) ON DELETE CASCADE
 );

@@ -4,9 +4,8 @@ services:
     ports:
       - "6379:6379"
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
+    image: narrative-reconstruction:latest
     command: uv run fastapi dev src/api/main.py --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
@@ -19,6 +18,7 @@ services:
 
   celery_worker:
     build: .
+    image: narrative-reconstruction:latest
     command: uv run celery -A src.bg_tasks.celery_worker.celery_app worker --loglevel=info
     volumes:
       - ./src:/app/src
@@ -27,22 +27,21 @@ services:
 
   flower:
     build: .
+    image: narrative-reconstruction:latest
     command: uv run celery --broker=redis://redis:6379/0 -A src.bg_tasks.celery_worker.celery_app flower --port=5555
     ports:
       - "5555:5555"
     depends_on:
       - redis
-  # db:
-  #   image: postgres
-  #   environment:
-  #     POSTGRES_USER: $(DB_USER)
-  #     POSTGRES_PASSWORD: $(DB_PASSWORD)
-  #     POSTGRES_DB: $(DB_NAME)
-  #   ports:
-  #     - "5432:5432"
-  #   volumes:
-  #     - ./postgres_data:/var/lib/postgresql/data
-  #     - ./init:/app/init
-  #     - ./pyproject.toml:/app/pyproject.toml
-  #   networks:
-  #     - appnet
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: $(DB_USER)
+      POSTGRES_PASSWORD: $(DB_PASSWORD)
+      POSTGRES_DB: $(DB_NAME)
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+      - ./init:/app/init
+      - ./pyproject.toml:/app/pyproject.toml
