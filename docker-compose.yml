@@ -36,9 +36,9 @@ services:
       POSTGRES_DB: database-1
     tty: true
 
-  scraper:
+  scraper-worker:
     build: .
-    container_name: scraper
+    container_name: scraper-worker
 
     develop:
       watch:
@@ -50,12 +50,39 @@ services:
 
     depends_on:
       - db
+      - redis
+
     environment:
       POSTGRES_HOST: db
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database-1
-    command: uv run scraper/scrape_articles.py
+    command: uv run celery -A scraper.celery_app worker --loglevel=info
+    tty: true
+
+  celery-beat:
+    build: .
+    container_name: celery-beat
+
+    develop:
+      watch:
+        # Rebuild the image on changes to the `pyproject.toml`
+        - action: rebuild
+          path: ./pyproject.toml
+    volumes:
+      - ./scraper:/app/scraper
+
+    depends_on:
+      - db
+      - redis
+
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database-1
+    command: uv run celery -A scraper.celery_app beat --loglevel=info
+    tty: true
 
   api:
     build: .
@@ -74,5 +101,16 @@ services:
       - ./api:/app/api
     tty: true
 
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
+    volumes:
+      - redis-data:/data
+    command: redis-server
+
 volumes:
   postgres_data:
+  redis-data:

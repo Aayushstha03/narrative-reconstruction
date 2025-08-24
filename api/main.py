@@ -13,6 +13,7 @@ db_config = {
     'port': int(os.getenv('POSTGRES_PORT', 5432)),
 }
 
+
 class Article(BaseModel):
     article_id: int
     title: str
@@ -20,24 +21,30 @@ class Article(BaseModel):
     url: str
     published_at: str
 
-@app.get("/articles/", response_model=Article)
+
+@app.get('/articles/', response_model=Article)
 def get_article_by_url(url: str):
     try:
         with psycopg.connect(**db_config) as conn:
             with conn.cursor() as cur:
-                cur.execute("""
+                cur.execute(
+                    """
                     SELECT article_id, title, content, url, published_at
                     FROM articles WHERE url = %s
-                """, (url,))
+                """,
+                    (url,),
+                )
                 row = cur.fetchone()
                 if row is None:
-                    raise HTTPException(status_code=404, detail="Article not found")
+                    raise HTTPException(
+                        status_code=404, detail='Article not found'
+                    )
                 article = Article(
                     article_id=row[0],
                     title=row[1],
                     content=row[2],
                     url=row[3],
-                    published_at=row[4].isoformat()
+                    published_at=row[4].isoformat(),
                 )
                 return article
     except Exception as e:
