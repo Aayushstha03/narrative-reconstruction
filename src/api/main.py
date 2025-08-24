@@ -1,15 +1,23 @@
 from fastapi import FastAPI
-from ..tasks.example_task import add
+from src.bg_tasks.tasks import sample_task
 
 app = FastAPI()
 
 
-@app.get('/')
-def hello_world():
-    return {'message': 'Hello, World!'}
+@app.get('/run-task')
+def run_task(duration: int):
+    task = sample_task.apply_async(args=[duration])
+    return {
+        'task_id': task.id,
+        'status': 'Task has been started in the background.',
+    }
 
 
-@app.get('/add')
-def trigger_add(a: int, b: int):
-    task = add.delay(a, b)  # Enqueue the task asynchronously
-    return {'task_id': task.id}
+@app.get('/task-status/{task_id}')
+def get_task_status(task_id: str):
+    task = sample_task.AsyncResult(task_id)
+    return (
+        {'status': task.state, 'result': task.result}
+        if (task.state == 'SUCCESS')
+        else {'status': task.state}
+    )

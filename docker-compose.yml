@@ -1,66 +1,48 @@
 services:
-  db:
-    image: postgres
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
+  redis:
+    image: redis:alpine
     ports:
-      - "5432:5432"
-    volumes:
-      - ./postgres_data:/var/lib/postgresql/data
-      - ./init:/docker-entrypoint-initdb.d
-      - ./pyproject.toml:/app/pyproject.toml
-
+      - "6379:6379"
   app:
     build:
       context: .
       dockerfile: Dockerfile
+    command: uv run fastapi dev src/api/main.py --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
-
-    develop:
-      watch:
-        - action: rebuild
-          path: ./pyproject.toml
-
     depends_on:
-      - db
-    environment:
-      DB_NAME: mydatabase
-      DB_USER: user
-      DB_PASSWORD: password
-      DB_HOST: db
-      DB_PORT: 5432
+      - redis
+      - celery_worker
+      # - db
     volumes:
       - ./src:/app/src
-
-  redis:
-    container_name: redis
-    image: redis:8.2-alpine
 
   celery_worker:
-    container_name: celery_worker
     build: .
-    command: uv run celery -A src.celery_worker.celery_app worker --loglevel=info
+    command: uv run celery -A src.bg_tasks.celery_worker.celery_app worker --loglevel=info
     volumes:
       - ./src:/app/src
-    env_file:
-      - .env
     depends_on:
-      - app
       - redis
-      # flower:
-      # container_name: flower
-      # build: .
-      # command: uv run celery -A src.celery_worker.celery_app flower --port=5555
-      # ports:
-      # - "5555:5555"
-      # environment:
-      # - CELERY_BROKER_URL=${CELERY_BROKER_URL}
-      # - CELERY_RESULT_BACKEND=${CELERY_RESULT_BACKEND}
-      # depends_on:
-      # - app
-      # - redis
-      # - celery_worker
-      #
+
+  flower:
+    build: .
+    command: uv run celery --broker=redis://redis:6379/0 -A src.bg_tasks.celery_worker.celery_app flower --port=5555
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+  # db:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_USER: $(DB_USER)
+  #     POSTGRES_PASSWORD: $(DB_PASSWORD)
+  #     POSTGRES_DB: $(DB_NAME)
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - ./postgres_data:/var/lib/postgresql/data
+  #     - ./init:/app/init
+  #     - ./pyproject.toml:/app/pyproject.toml
+  #   networks:
+  #     - appnet

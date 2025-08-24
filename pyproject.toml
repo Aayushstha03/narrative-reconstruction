@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.13.4",
-    "celery>=5.5.3",
+    "celery[redis]>=5.5.3",
     "dateparser>=1.2.2",
     "dotenv>=0.9.9",
     "fastapi[standard]>=0.116.1",
@@ -18,7 +18,7 @@ dependencies = [
     "pandas>=2.3.1",
     "psycopg>=3.2.9",
     "pytest>=8.4.1",
-    "redis>=6.3.0",
+    "redis>=5.2.1",
     "requests>=2.32.4",
     "uvicorn>=0.35.0",
 ]

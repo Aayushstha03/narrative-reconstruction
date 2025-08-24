@@ -10,4 +10,5 @@ COPY . .
 
 RUN uv sync --locked
 
-CMD ["uv", "run", "fastapi", "dev", "src/api/main.py", "--host", "0.0.0.0", "--port", "8000"]
+# CMD [ "source" ".venv/bin/activate" ]
+# CMD ["uv", "run", "fastapi", "dev", "src/api/main.py", "--host", "0.0.0.0", "--port", "8000"]
